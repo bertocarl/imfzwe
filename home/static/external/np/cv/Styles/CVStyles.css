@@ -1,0 +1,447 @@
+﻿/*New styles added as of hedder footer change
+*/
+
+body {
+    background: #E9E9E9;
+    color: #505050;
+    font: 72%/150% Verdana, Helvetica, Arial, sans-serif;
+    text-align: left;
+}
+
+.research #content-nav {
+    background: url(../../../images/research/backgrounds/ltgraygradient.png) repeat-x !important;
+    text-align: left;
+    padding: 15px;
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    .research #content-nav {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}
+
+.research ul#resnav {
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+    font-size: .85em;
+}
+
+ul.colorlink a {
+    text-decoration: none;
+    color: #D86A22;
+}
+
+.research #content-main {
+    line-height: normal;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+.hilite {
+    color: #3265CB;
+    font-size: 0.9em;
+}
+
+research h2.nonserif-orange {
+    color: #B13F20;
+    padding: 0;
+    margin: 0 0 0 .5em;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 1.7em;
+    line-height: 1.1em;
+    font-weight: bold;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        font-size: 1.3em;
+    }
+
+.research #content-main.cv-main p {
+    font-size: .9em !important;
+    line-height: normal !important;
+    overflow: hidden;
+}
+
+.research h3 {
+    color: #3A76BC;
+    padding: 0;
+    border: none;
+    margin: 0 0 10px 0;
+}
+
+.research h2.nonserif-orange {
+    color: #B13F20;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+
+
+input, textarea {
+    color: #191919;
+    font: 100% Tahoma, Verdana, "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+}
+
+.research #content-main .resformtxt {
+    border: 1px solid #BCBCBC;
+    padding: 1px;
+    width: 84%;
+}
+
+input, textarea {
+    color: #191919;
+    font: 100% Tahoma, Verdana, "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+}
+
+.research #content-main .resformbtn {
+    border: 1px solid #ddd;
+    background: #f39453;
+    padding: 8px;
+    color: #fff;
+    outline: none;
+    line-height: 1;
+}
+
+input, textarea {
+    color: #191919;
+    font: 100% Tahoma, Verdana, "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+}
+
+#content {
+    font-size: 16px;
+}
+
+.authorHeader{
+    margin-bottom :0.75rem;
+}
+
+.research #reslisttabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+}
+
+  
+
+.research #content-main ul li {
+    list-style-type: square;
+    color: #58595B;
+    margin-bottom: .5em;
+    font-size: .78em;
+    line-height: normal;
+}
+
+.research #reslisttabs li {
+    display: inline;
+    list-style: none;
+    margin-bottom: 0em !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0 6px 0 6px;
+}
+
+
+    
+
+.research .ui-tabs .ui-tabs-nav li {
+    position: relative;
+    float: left;
+    border-bottom-width: 0 !important;
+    margin: 0 .3em -1px 0;
+    padding: 0;
+}
+
+.research .ui-tabs .ui-state-default {
+    background: #f0efef;
+}
+
+.research #rescvtabcontain {
+    background: url(../../../images/research/backgrounds/ltgraygradient2.png) repeat-x !important;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    zoom: 1;
+    float: left;
+}
+
+.research .ui-tabs .ui-tabs-panel {
+    padding: 1em 1.4em;
+    display: block;
+    border-width: 0;
+    background: none;
+    list-style: none;
+    position: relative;
+    padding: 1em .1em 0;
+}
+
+.research #reslisttabs li a {
+    padding: 5px;
+    color: #505050;
+    text-decoration: none;
+    float: left;
+    display: block;
+}
+
+.research .ui-tabs .ui-tabs-nav li a, .research .ui-tabs.ui-tabs-collapsible .research .ui-tabs-nav li.ui-tabs-selected a {
+    cursor: pointer;
+}
+
+.research .ui-tabs .ui-tabs-nav {
+    list-style: none;
+    position: relative;
+    padding: 0 .1em 0 .1em;
+    display: flex;
+    margin-bottom:0;
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .research .ui-tabs .ui-tabs-nav {
+        display: block;
+        margin-bottom: 0;
+    }
+}
+
+
+.research #reslisttabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    /*width: 560px;*/ /* overflow: hidden; bug fix for scroll caused by tabs */
+    margin-top: .5em;
+}
+
+   
+
+
+
+.research #reslisttabs li a:hover, .research .ui-tabs .ui-state-hover {
+    background: #e0e0e2 !important;
+}
+
+.research .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    padding-bottom: .1em;
+    border-bottom-width: 0;
+    background: #e0e0e2 !important;
+    margin-bottom: -.1em;
+    border: 0;
+    font-weight: bold;
+}
+
+.research .ui-tabs .ui-tabs-panel {
+    padding: 1em 1.4em;
+    display: block;
+    border-width: 0;
+    background: none;
+}
+
+.research #content-main.cv-main p {
+    font-size: .9em !important;
+    line-height: normal !important;
+    overflow: hidden;
+}
+
+
+
+/*auther*/
+
+research #rescvtabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    width: 560px;
+    margin-top: .5em;
+}
+
+.research #rescvtabs li {
+    display: inline;
+    list-style: none;
+    margin-bottom: 0em !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0 6px 0 6px;
+}
+
+.research #rescvtabs li a {
+   padding: 5px;
+   color: #505050;
+   text-decoration: none;
+   float: left;
+   display: block;
+   font-size: 1.1em;
+}
+
+.right {
+    float: right;
+	padding-left: 5px;
+}
+
+a:visited {
+    color: #666699;
+}
+a:link {
+    color: #333;
+}
+
+.colorlink a {
+    color: #D86A22;
+}
+
+.research #content-main.cv-main p {
+    font-size: .9em !important;
+    line-height: normal !important;
+    overflow: hidden;
+}
+
+.research #content-main.cv-main h4 {
+    padding: 5px 0 !important;
+    margin: 0px !important;
+}
+
+/*Added as part of SRS 24883 : Change Publication category
+*/
+.defaultTable {
+    width: 100%;
+    cellpadding: 0;
+    cellspacing: 0;
+    border: none !important;
+    margin: 0 !important;
+}
+
+    .defaultTable td {
+        border: none !important;
+    }
+/*.DetailsTable
+{
+    border-left: silver 1px solid !important;
+    border-right: silver 1px solid !important;
+}
+.DetailsTable td
+{
+    border-top: silver 1px solid !important;
+    border-bottom: silver 1px solid !important;
+}*/
+.rightalign {
+    text-align: right !important;
+    align: right !important;
+}
+
+.leftalign {
+    text-align: left !important;
+    align: left !important;
+}
+
+.middlealign {
+    vertical-align: middle !important;
+}
+
+.tdAuthorImage {
+    width: 25% !important;
+    margin: 0px !important;
+}
+
+    .tdAuthorImage img {
+        margin: 0px !important;
+        height: 90px !important;
+        height: 75px !important;
+    }
+
+.MoreLink {
+    text-decoration: none;
+    color: #d86a22;
+    cursor: pointer !important;
+    float: right;
+    font-size: 12px;
+}
+
+.ExpandLink {
+    text-decoration: none;
+    color: #d86a22;
+    cursor: pointer !important;
+    float: left;
+    font-size: 12px;
+}
+
+/**/
+.sideBarMenuCV {
+    margin-bottom: 15px;
+}
+
+    .sideBarMenuCV ul#resnav {
+        list-style-type: circle !important;
+        margin: 0 !important;
+        padding: 0 0 0 15px !important;
+        display: inline-block;
+    }
+
+
+.contentAreaCV .contentInner .blurbcol p {
+    text-align: justify;
+    font-size: .9em !important;
+    line-height: normal !important;
+    overflow: hidden;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.textboxCV {
+    display: inline-block;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 1;
+    width:100%;
+}
+
+.errorCenter {
+    text-align: center !important;
+    margin: 10rem;
+}
+
+.printversion {
+    background: url(../../../images/icons/light/printer.png) right center no-repeat;
+    width: 85px;
+    height: 16px;
+    display: -moz-inline-box;
+    vertical-align: top;
+    overflow: visible;
+    display: inline-block;
+    font-style: normal;
+    font-size: 80%;
+    text-align: left;
+}
+.cvContent {
+    font-size: .85em;
+}
+.CVnamepara > p{
+    margin:0;
+}
+
+.CVnamepara > p + p {
+    margin-top: 0.59em;
+}

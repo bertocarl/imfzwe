@@ -1,0 +1,32 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% load static %}
+
+{% load bootstrap4 %}
+
+<head>
+  <link href="https://www.imf.org/external/07/images/imf_seal.ico" type="image/ico" rel="Shortcut Icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  </head>
+
+ <body>
+{% block content %}
+
+<div class="jumbotron text-center">
+    <h1 class="display-3">Thank You!</h1>
+    <p class="lead"><strong>Please check your email, we will get to you after two working days.</strong></p>
+    <hr>
+    <!-- <p>
+      Having trouble? <a href="">Contact us </a>
+    </p> -->
+    <p class="lead">
+      <a class="btn btn-danger btn-sm" href="/" role="button">Continue to homepage</a>
+    </p>
+  </div>
+
+{% endblock %}
+</body>
+
+</html>

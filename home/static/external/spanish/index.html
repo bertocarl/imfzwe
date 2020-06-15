@@ -1,0 +1,1014 @@
+﻿w <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from www.imf.org/external/spanish/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jun 2020 15:21:36 GMT -->
+<head>
+<title>FMI -- Página inicial del Fondo Monetario Internacional (FMI) en español</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-control" content="no-cache" />
+<meta name="Creator" content="" />
+<meta name="Subject" content="" />
+<meta name="Description" content="La p&aacute;gina inicial del FMI contiene enlaces a noticias, publicaciones, art&iacute;culos, novedades, e informaci&oacute;n sobre el funcionamiento del Fondo Monetario Internacional" />
+<meta name="Date" content="2016-03-30" />
+<meta name="Speaker" content="" />
+<meta name="Type" content="" />
+<meta name="Country" content="" />
+<meta name="ISOCODE" content="" />
+<meta name="Region" content="" />
+<meta name="Keywords" content="fmi, fondo monetario internacional, estabilidad cambiaria, estabilidad Económica, tipos de cambio, fondo, monetario, internacional, economía, balanza de pagos, Lagarde, economía mundial, supervisión, cuotas, bretton woods, asistencia técnica, asistencia financiera, derechos especiales de giro, deg, cuotas, reformas, estructuras de gobierno, países de bajo ingreso" />
+<meta name="Language" content="esl" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="../19/css/styles.css" />
+<link href="../07/images/imf_seal.ico" type="image/ico" rel="Shortcut Icon" />
+
+
+
+<!-- NOINDEX -->
+<!-- start eng/hdscript.txt -->
+<script type="text/javascript">
+<!-- hide
+//Clear inherited frames
+if (top.frames.length!=0)
+top.location=self.document.location;
+// unhide -->
+</script>
+
+
+<!-- Commenting the Old Code -->
+<!-- start s_code.js-->
+    <!-- SiteCatalyst code version: H.12.
+    Copyright 1997-2007 Omniture, Inc. More info available at
+    http://www.omniture.com -->
+ <!--   <script type="text/javascript" language="JavaScript" src="/external/x10/ssi/s_code.js"></script>
+    <script type="text/javascript" language="JavaScript">
+     /* You may give each page an identifying name, server, and channel on
+     the next lines. */
+     s.pageName=""
+     
+     
+     /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+     var s_code=s.t();
+     
+     if(s_code)document.write(s_code)</script> -->
+    <!-- End SiteCatalyst code version: H.12. -->
+    <!-- stop s_code.js -->
+    <script type="text/javascript" language="JavaScript" src="../x10/ssi/gatag.js"></script> 
+    <!-- Start Google Analytics Code -->
+<script type="text/javascript">    
+var _gaq = _gaq || [];   
+_gaq.push(['_setAccount', 'UA-3984706-1']);   
+_gaq.push(['_trackPageview']);   
+
+(function() {     
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  
+</script>
+<!-- End Google Analytics Code -->
+<!--// ForeSee Production Embed Script v2.00 Start-->
+<Script type="text/javascript">
+// ForeSee Production Embed Script v2.00
+// DO NOT MODIFY BELOW THIS LINE *****************************************
+;(function (g) {
+var d = document, am = d.createElement('script'), h = d.head || d.getElementsByTagName("head")[0], fsr = 'fsReady',
+aex = {
+  "src": "//gateway.foresee.com/sites/imf-org/production/gateway.min.js",
+  "type": "text/javascript",
+  "async": "true",
+  "data-vendor": "fs",
+  "data-role": "gateway"
+};
+for (var attr in aex){am.setAttribute(attr, aex[attr]);}h.appendChild(am);g[fsr] = function () {var aT = '__' + fsr + '_stk__';g[aT] = g[aT] || [];g[aT].push(arguments);};
+})(window);
+// DO NOT MODIFY ABOVE THIS LINE *****************************************
+</script>
+<!--// ForeSee Production Embed Script v2.00 End-->
+<script language="JavaScript" type="text/javascript" src="../x10/ssi/googlepdf.js"></script>
+
+<!-- /NOINDEX -->
+
+ <!-- Omniture Tracking DTM Script begin--> 
+
+ <script src="../../../assets.adobedtm.com/c7b988f076dc93cc20c734bc51e87dde0b81f134/satelliteLib-834e3fe4ac4ea890c36d061e19fc6cfc1b5dc5d0.js"></script> 
+ <!-- Omniture Tracking DTM Script end -->
+<script src='../12/js/iapnewnewnew7.js' type='text/javascript'></script>
+<script src="../../../ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <script type="text/javascript">
+        var app = angular.module('IMFHome', []);
+
+        app.filter("sanitize", ['$sce', function ($sce) {
+            return function (htmlCode) {
+                return $sce.trustAsHtml(htmlCode);
+            }
+        } ]);
+
+        app.controller('whatsNewCtrl', function ($scope, $http, $sce) {
+
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1; //January is 0!
+
+            var yyyy = today.getFullYear();
+            if (dd < 10) {
+                dd = '0' + dd
+            }
+            if (mm < 10) {
+                mm = '0' + mm
+            }
+            var today = mm + '/' + dd + '/' + yyyy;
+            var url = "/external/ws/IMFORGReadAPILegacy/api/whatsnew?count=8&isoCode=esl&date=" + today.toString();
+
+            $http.get(url)
+            .success(function (response) {
+
+                $scope.whatsNewItems = response;
+            });
+        });
+        app.controller('centerPieceCtrl', function ($scope, $http, $sce) {
+
+
+            var url = "/external/ws/IMFORGReadAPILegacy/api/multicenterpiece?count=5&isocode=esl&status=L";
+
+            $http.get(url)
+            .success(function (response) {
+                $scope.centerPieceItems = response;
+            });
+        });
+
+        app.filter('spaceless', function () {
+            return function (input) {
+                if (input) {
+                    return input.replace(/\s/g, '-');
+                }
+            }
+        });
+
+        function resizeCP(cpimg) {
+
+
+            // Get on screen image
+            var screenImage = cpimg;
+
+
+            // Create new offscreen image to test
+            var theImage = new Image();
+            theImage.src = screenImage.attributes["src"].value;
+
+            // Get accurate measurements from that.
+            var imageWidth = theImage.width;
+            var imageHeight = theImage.height;
+
+
+
+            if (imageWidth > 1720) {
+
+                $('#' + screenImage.attributes["id"].value).closest('div').removeClass("half1")
+
+            }
+
+            $("#dvCPParent").addClass("royalSlider");
+            $("#dvCPParent").addClass("rsDefault");
+
+            $(".royalSlider").royalSlider({
+                // options go here
+                // as an example, enable keyboard arrows nav
+                keyboardNavEnabled: true,
+                autoScaleSliderWidth: 1099,
+                arrowsNav: true,
+                usePreloader: true,
+                numImagesToPreload: 4,
+                delay: 8000,
+                pauseOnHover: true,
+                transitionSpeed: 600,
+                controlsInside: true,
+                sliderTouch: true,
+                loopRewind: true,
+                navigateByClick: false,
+
+                sliderDrag: false,
+                controlNavigation: 'bullets',
+                autoPlay: {
+                    // autoplay options go gere
+                    enabled: true,
+                    pauseOnHover: true
+                }
+            });
+        }
+    </script>
+</head>
+
+<body class="home" data-ng-app="IMFHome">
+     <div class="grid-container"> 
+         
+         <!-- BEGIN ORANGE BANNER --->  
+         
+<div class="feature-banner orange new">
+<div class="wrap"><div id="breaking-news-container">
+  <div id="breaking-news-colour" class="slideup animated"></div><span class="breaking-news-title delay-animated slidein">INFO</span><a class="breaking-news-headline delay-animated2 fadein marquee" href="https://www.imf.org/es/Topics/imf-and-covid19">Lea la informaci&oacute;n m&aacute;s reciente sobre el trabajo del FMI frente a la crisis del coronavirus (COVID-19) </a>
+  </div>
+</div>
+</div> 
+         
+         
+<!-- BEGIN HEADER --->
+    <header id="header" class="main-header">
+        
+    <!-- BEGIN TOP HEADER AREA --->    
+     <div class="flex-container padded-vertical-20">
+      <div class="cell flex-third text-left">
+        <ul class="social-hz">
+            <li><a href="http://www.twitter.com/fminoticias" target="_blank" class="fab fa-twitter" title="S&iacute;guenos en Twitter"></a></li>
+            <li><a href="https://www.facebook.com/IMFAmericas" class="fab fa-facebook-f" target="_blank" title="Encu&eacute;ntranos en Facebook"></a></li>
+            <li><a href="http://www.linkedin.com/company/international-monetary-fund" class="fab fa-linkedin-in" target="_blank" title="S&iacute;guenos en LinkedIn"></a></li>
+            <li><a href="https://www.instagram.com/the_imf/" class="fab fa-instagram" target="_blank" title="S&iacute;guenos en Instagram"></a></li>
+            <li><a href="http://www.youtube.com/imf" class="fab fa-youtube" target="_blank" title="S&iacute;guenos en Youtube"></a></li>
+            <li><a href="https://www.imf.org/external/pubs/ft/survey/so/podcast.aspx" class="far fa-podcast" title="Podcasts del FMI"></a></li>
+            <li><a href="http://www.flickr.com/imfphoto" class="fab fa-flickr" target="_blank" title="S&iacute;guenos en Flickr"></a></li>
+            <li><a href="../cntpst/index.html" class="fas fa-envelope-open-text" title="Notificaciones por correo electr&oacute;nico"></a></li>
+        </ul>
+      </div>
+      <div class="cell flex-third logo-cell">
+          <a href="index.html"><img src="../19/images/header/IMF_seal_shadow.png" srcset="/external/19/images/header/IMF_seal_shadow.svg" alt="International Monetary Fund" class="head-seal" /></a>
+          <a href="index.html"><img src="../19/images/header/IMF_WebHeader_SPA.png" srcset="/external/19/images/header/IMF_WebHeader_SPA.svg" alt="International Monetary Fund" class="head-logo" /></a>
+      </div>
+      <div class="cell flex-third text-right search-cell"> 
+          <!-- BEGIN desktop SEARCH -->
+		  
+		   <!-- Commenting old Search Box for Desktop -->
+            <!--<form id="searchform" method="get" class="hide-mobile" onSubmit="window.location.href = '/es/search#q='+getElementById('NewQuery').value+'&sort=relevancy';return false;">
+              <fieldset>
+                <input id="NewQuery" name="NewQuery" class="text search" type="text" />
+              <input type="hidden" id="Lan" name="Lan" value="esl" />
+		<input id="col" name="col" type="hidden" value="SITESL">
+</fieldset>
+              <button type="submit" class="far fa-search" name="submit"></button>
+            </form>-->
+         <!-- end desktop SEARCH -->
+          
+          <!-- BEGIN mobile SEARCH -->
+		  		  <!-- Commenting old Search Box for Mobile -->
+          <!--<form id="searchform-mob" method="get" class="is-mobile" action="/es/search">
+         	<i class="far fa-search" aria-hidden="true"></i>
+		 <div class="search-box">
+    		<input id="NewQuery-mob" name="NewQuery" class="text search" type="text" />
+<input type="submit" value="Buscar"/>
+  		</div>
+                          </form>-->
+						  
+						  <!-- Changes for New Coveo Search Box -->
+		 <!-- BEGIN desktop SEARCH -->
+	
+	<link rel="stylesheet" href="../../../static.cloud.coveo.com/searchui/v2.4710/css/CoveoFullSearch.css" />
+	<link rel="stylesheet" href="../../Coveo/Hive/css/CoveoForSitecore.css" />
+	<script class="coveo-script" type="text/javascript" src='../../../static.cloud.coveo.com/searchui/v2.4710/js/CoveoJsSearch.Lazy.min.js'></script>
+	<script class="coveo-for-sitecore-script" type="text/javascript" src='../../Coveo/Hive/js/CoveoForSitecore.Lazy.min.js'></script>
+	<script type="text/javascript" src="../../Coveo/Hive/js/cultures/es.js"></script>
+	
+	<!-- Coveo Resources Configuration -->
+
+    <script type="text/javascript">
+        var endpointConfiguration = {           
+			siteName: "imf",
+            restEndpointUri: "/coveo/rest"
+        };
+        if (typeof (CoveoForSitecore) !== "undefined") {
+            CoveoForSitecore.SearchEndpoint.configureSitecoreEndpoint(endpointConfiguration);
+        }
+    </script>
+	
+	<!-- BEGIN GLOBAL SEARCH -->           
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var searchboxElement = document.getElementById("imfcoveosearchbox");
+        searchboxElement.addEventListener("CoveoComponentInitialized", function() {
+            CoveoForSitecore.initSearchboxIfStandalone(searchboxElement, "/es/Search");
+        });
+    })
+</script>
+
+
+
+    <div id="imfcoveosearchbox_container"
+                     data-prebind-maximum-age='currentMaximumAge'>
+					 
+        <div id="imfcoveosearchbox"
+             class="CoveoSearchbox"
+                             data-enable-omnibox='true'
+                 data-prebind-maximum-age='currentMaximumAge'
+                 data-placeholder='Buscar'>            
+            
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        var componentId = "imfcoveosearchbox";
+        var componentElement = document.getElementById(componentId);
+
+        function showError(error) {
+                console.error(error);
+        }
+
+        function areCoveoResourcesIncluded() {
+            return typeof (Coveo) !== "undefined";
+        }
+
+        if (areCoveoResourcesIncluded()) {
+            var event = document.createEvent("CustomEvent");
+            event.initEvent("CoveoComponentInitialized", false, true);
+            
+            setTimeout(function() {
+                componentElement.dispatchEvent(event);
+            }, 0);
+        } else {
+            componentElement.classList.add("invalid");
+            showError("The Coveo Resources component must be included in this page.");
+        }
+    });
+</script>            
+            <div class="CoveoForSitecoreConfigureSearchHub" data-sc-search-hub="Search"></div>
+			<div class="CoveoAnalytics" data-search-hub="Search"></div>
+        </div>
+        
+    </div>
+    
+    <!-- END GLOBAL SEARCH -->
+	<!-- end desktop SEARCH -->         
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var searchboxElement = document.getElementById("imfcoveosearchboxMobile");
+        searchboxElement.addEventListener("CoveoComponentInitialized", function() {
+            CoveoForSitecore.initSearchboxIfStandalone(searchboxElement, "/es/Search");
+        });
+    })
+</script>
+
+<div class="is-mobile">
+
+<i class="far fa-search" aria-hidden="true"></i>
+
+<div class="search-box">
+
+    <div id="imfcoveosearchboxMobile_container"
+                     data-prebind-maximum-age='currentMaximumAge'>
+            
+        <div id="imfcoveosearchboxMobile"
+             class="CoveoSearchbox"
+                             data-enable-omnibox='true'
+                 data-prebind-maximum-age='currentMaximumAge'
+                 data-placeholder='Buscar'
+				 data-add-search-button='true'>
+            
+            
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        var componentId = "imfcoveosearchboxMobile";
+        var componentElement = document.getElementById(componentId);
+
+        function showError(error) {
+                console.error(error);
+        }
+
+        function areCoveoResourcesIncluded() {
+            return typeof (Coveo) !== "undefined";
+        }
+
+        if (areCoveoResourcesIncluded()) {
+            var event = document.createEvent("CustomEvent");
+            event.initEvent("CoveoComponentInitialized", false, true);
+            
+            setTimeout(function() {
+                componentElement.dispatchEvent(event);
+            }, 0);
+        } else {
+            componentElement.classList.add("invalid");
+            showError("The Coveo Resources component must be included in this page.");
+        }
+    });
+</script>            
+            <div class="CoveoForSitecoreConfigureSearchHub" data-sc-search-hub="Search"></div>
+			<div class="CoveoAnalytics" data-search-hub="Search"></div>
+			</div>        
+		</div>
+	</div>
+</div>
+    
+    <!-- END Mobile GLOBAL SEARCH Box -->
+          <!-- end mobile SEARCH -->
+    <!-- END SEARCH --> 
+      </div>
+        
+</div>
+     <!-- END TOP HEADER AREA --->    
+        
+        
+        
+   <!-- BEGIN LANG NAV --->      
+	<div class="droopmenu-navbar">
+            <div class="droopmenu-inner">
+                <div class="droopmenu-extra">
+                   <ul class="droopmenu">                   
+                        <li>
+                        	<a title="Spanish" href="index.html">
+                            	<i class="ion-ios-locked"></i> Español
+                            </a>
+                            <ul>
+                            		<li><a title="English" href="https://www.imf.org/external/index.htm">English</a></li>
+                            	<li><a title="Arabic" href="../arabic/index.html">عربي</a></li>
+                                <li><a title="Chinese" href="../chinese/index.html">中文</a></li>
+                                
+                                <li><a title="French" href="../french/index.html">Français</a></li>
+                                <li><a title="Japanese" href="../japanese/index.html">日本語</a></li>	
+                                <li><a class="last" title="Russian" href="../russian/index.html">Русский</a></li>	
+                                <!-- <li><a class="last" title="Spanish" href="/external/spanish/index.htm">Español</a></li> -->
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div><!-- droopmenu-extra -->
+            </div><!-- droopmenu-inner -->
+        </div><!-- droopmenu-navbar  -->
+        
+    <!-- END LANG NAV --->
+        
+         </header>
+<!-- END HEADER --->
+    
+    
+    
+<!-- BEGIN SLIDER --->
+        	<div class="hero home" role="banner">
+            <div id="dvCPParent" data-ng-controller="centerPieceCtrl">
+
+                
+                    <div id="dvLOECP{{$index}}" class="half1" data-rsdelay="8000" data-ng-repeat="module in centerPieceItems">
+
+                        <a href="https://www.imf.org/redirect/?URL=$V&amp;404;https://www.imf.org:443/external/spanish/{{ module.ArticleFileName }}">
+                            <img id="imgLOECP{{$index}}" ng-src="{{ module.FileLocation | spaceless }}" alt="" onload="resizeCP(this)" title="{{module.AlternateText}}" /></a>
+                        <div class="slide-caption">
+                            <h3><a href="https://www.imf.org/redirect/?URL=$V&amp;404;https://www.imf.org:443/external/spanish/{{ module.ArticleFileName }}" data-ng-bind-html="module.ArticleTitle  | sanitize"></a></h3>
+                            <p class="ellipsis"> <a href="https://www.imf.org/redirect/?URL=$V&amp;404;https://www.imf.org:443/external/spanish/{{ module.ArticleFileName }}" data-ng-bind-html="module.ArticleDescription | sanitize"> </a></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    
+    <!-- END SLIDER --->
+
+    
+    
+    
+<!-- BEGIN PAGE CONTENT --->
+         
+         
+     <!-- BEGIN BELT -->
+         <div class="full-width">
+    <div class="flex-container contain padded-vertical-40">
+
+<!-- BELT 1 -->
+<!-- start COVID-19 factsheet -->  
+      <div class="cell belt-item">
+              <a href="https://www.imf.org/es/About/Factsheets/Sheets/2020/02/28/how-the-imf-can-help-countries-address-the-economic-impact-of-coronavirus"><img src="../19/images/belt/COVID19.jpg" alt="Ficha técnica: La ayuda que el FMI puede prestar a los países para hacer frente al impacto económico del coronavirus" /></a>
+              <div class="belt-caption">
+                  <h5><a href="https://www.imf.org/es/About/Factsheets/Sheets/2020/02/28/how-the-imf-can-help-countries-address-the-economic-impact-of-coronavirus">Ficha técnica: Cómo el FMI brinda asistencia con la COVID-19</a></h5>
+                <p><a href="https://www.imf.org/es/About/Factsheets/Sheets/2020/02/28/how-the-imf-can-help-countries-address-the-economic-impact-of-coronavirus">Tiempos excepcionales requieren acciones excepcionales. Aprenda lo que está haciendo el FMI para ayudar a los países para hacer frente al impacto económico del coronavirus.</a></p>
+              </div>
+          </div>      
+<!-- end COVID-19 factsheet --> 
+
+<!-- start LIVE FLAGSHIP -->  
+<!--      <div class="cell belt-item">
+              <a href="https://meetings.imf.org/en/2020/Spring/imf-live"><img src="/external/19/images/belt/Belt_LIVE_AM.gif" alt="Conferencia de prensa del departamento del Hemisferio Occidental del FMI" /></a>
+              <div class="belt-caption">
+                  <h5><a href="https://meetings.imf.org/en/2020/Spring/imf-live">VEA EN DIRECTO: Conferencia de prensa del departamento del Hemisferio Occidental del FMI</a></h5>
+                <p><a href="https://meetings.imf.org/en/2020/Spring/imf-live">Sintonice para ver la conferencia de prensa del departamento del Hemisferio Occidental del FMI, jueves, 16 de abril, 5:30 p.m. EDT</a></p>
+              </div>
+          </div>       -->
+<!-- end LIVE FLAGSHIP --> 
+
+		<!-- Start LIVE WEBCAST -->                 
+<!-- 		  <div class="cell belt-item">
+		              <a href="/external/mmedia/viewlive.aspx?Eventid=7389#fragment-2"><img src="/external/19/images/belt/Belt_LIVE.gif" alt="Conferencia de prensa del Departamento del Hemisferio Occidental, FMI" /></a>
+		              <div class="belt-caption">
+		                  <h5><a href="/external/mmedia/viewlive.aspx?Eventid=7389#fragment-2">En Directo: Conferencia de prensa del Departamento del Hemisferio Occidental, FMI</a></h5>
+		                <p><a href="/external/mmedia/viewlive.aspx?Eventid=7389#fragment-2">29 de enero a las 10hrs</a></p>
+		              </div>
+		          </div>   --> 
+		<!-- End LIVE WEBCAST -->  
+          
+<!-- End BELT 1 -->
+ 
+<!-- BELT 2 -->   
+
+<!-- start GFSR-->  
+    <div class="cell belt-item">
+              <a href="https://www.imf.org/external/mmedia/view.aspx?vid=6161129765001"><img src="../19/images/belt/spa/Belt_LFC-Spanish.jpg" alt="La Línea de Crédito Flexible (LCF) del FMI" /></a>
+              <div class="belt-caption">
+                  <h5><a href="#">La Línea de Crédito Flexible (LCF) del FMI</a></h5>
+                <p><a href="https://www.imf.org/external/mmedia/view.aspx?vid=6161129765001">Chile y Perú son nuevos receptores de la LCF del FMI, disponible a países con sólidos antecedentes económicos y marcos de políticas. La LCF proporciona seguro contra choques externos y envía una fuerte señal de apoyo de la comunidad global.</a>
+                </p>
+              </div>
+          </div>   
+<!-- end GFSR --> 
+ 
+<!-- start Virtual SMs -->  
+<!--    <div class="cell belt-item">
+              <a href="https://www.imf.org/es/News/Articles/2020/03/03/pr2077-statement-by-imf-md-kristalina-georgieva-and-wbg-pres-david-malpass-on-imf-wbg-sm20"><img src="/external/19/images/belt/spa/SMs-belt_card_ES.png" alt="Reuniones de Primavera 2020" /></a>
+              <div class="belt-caption">
+                  <h5><a href="https://www.imf.org/es/News/Articles/2020/03/03/pr2077-statement-by-imf-md-kristalina-georgieva-and-wbg-pres-david-malpass-on-imf-wbg-sm20">Reuniones de Primavera 2020</a></h5>
+                <p><a href="https://www.imf.org/es/News/Articles/2020/03/03/pr2077-statement-by-imf-md-kristalina-georgieva-and-wbg-pres-david-malpass-on-imf-wbg-sm20">Las Reuniones de Primavera de 2020 se adaptan a modalidad virtual</a></p>
+              </div>
+          </div>   -->
+<!-- end Virtual SMs --> 
+
+<!-- End BELT 2 -->   
+
+<!-- BELT 3 -->
+	<!-- Start Flagships -->
+<!--           <div class="cell belt-item">
+              <a href="#"><img alt="Flagships" src="/external/19/images/belt/belt_flagships.jpg"></a>
+              <div class="belt-caption">
+                  <h5><a href="/es/Publications/GFSR/Issues/2019/10/01/global-financial-stability-report-october-2019">INFORMES</a></h5>
+                  <p><a href="/es/Publications/WEO/Issues/2019/10/01/world-economic-outlook-october-2019">Perspectivas de la economía mundial</a></p>
+                <p><a href="/es/Publications/GFSR/Issues/2019/10/01/global-financial-stability-report-october-2019">Informe sobre la estabilidad financiera mundial</a></p>
+                <p><a href="/es/Publications/FM/Issues/2019/09/12/fiscal-monitor-october-2019">Monitor fiscal</a></p>
+              </div>
+          </div> -->
+	<!-- End Flagships -->
+
+<!-- start Coronavirus page -->  
+    <div class="cell belt-item">
+              <a href="https://www.imf.org/es/Topics/imf-and-covid19"><img src="../19/images/belt/Coronavirus.jpg" alt="Información más reciente sobre el trabajo del FMI para abordar la crisis del coronavirus " /></a>
+              <div class="belt-caption">
+                  <h5><a href="https://www.imf.org/es/Topics/imf-and-covid19">El FMI y COVID-19 (Coronavirus)</a></h5>
+                <p><a href="https://www.imf.org/es/Topics/imf-and-covid19">Información más reciente sobre el trabajo del FMI para abordar la crisis del coronavirus</a></p>
+              </div>
+          </div>   
+<!-- end coronavirus page --> 
+
+	<!-- Start Bi-weekly press conf -->
+<!-- 	           <div class="cell belt-item">
+              <a href="/external/mmedia/view.aspx?vid=6140915415001"><img src="/external/19/images/belt/PressBriefing.jpg" alt="Image" /></a>
+              <div class="belt-caption">
+                  <h5><a href="/external/mmedia/view.aspx?vid=6140915415001">Video</a></h5>
+                <p><a href="/external/mmedia/view.aspx?vid=6140915415001">El portavoz del FMI informa sobre las últimas actividades de la institución, 12 de marzo de 2020</a></p>
+              </div>
+          </div>   --> 
+	<!-- End Bi-weekly press conf -->
+	                    
+ <!-- Start F&D --> 
+	  <!-- <div class="cell belt-item">
+              <a href="/external/pubs/ft/fandd/spa/2019/09/index.htm"><img src="/external/19/images/belt/spa/Belt-FandD.jpg" alt="Image" /></a>
+              <div class="belt-caption">
+                  <h5><a href="https://www.imf.org/external/pubs/ft/fandd/spa/2019/09/index.htm">Finanzas y Desarrollo</a></h5>
+                <p><a href="https://www.imf.org/external/pubs/ft/fandd/spa/2019/09/index.htm">El rastro del dinero: Vastas sumas de dinero, que podrían usarse para mejorar la vida de la gente, son depositadas en paraísos fiscales o perdidas debido a la corrupción</a></p>
+              </div>
+          </div>  --> 
+ <!-- End F&D --> 
+
+<!-- End BELT 3 -->         
+     </Div>
+             </div>
+     <!-- END BELT -->
+         
+   
+<!-- BEGIN SDR -->
+         <div class="full-width text-center bg-grey padded-vertical-20">
+<iframe width="100%" scrolling="no" frameborder="0" src="https://www.imf.org/external/sdr_loe/LOE_sdr.aspx?lang=esl" allowtransparency="true" class="iframe-sdr"></iframe>
+</div>
+<!-- END SDR -->
+         
+<!-- BEGIN Videos -->
+      <div class="flex-wrap padded-vertical-20 text-left bg-lightest-grey">
+          <div class="flex-container contain-indent videos-module">
+            <!-- add flex-wrap to div above if adding title back -->
+            <!-- <div class="flex-full"><h4>Videos</h4> </div> -->
+
+            <div class="flex-third videoWrapper">
+              <iframe src="http://players.brightcove.net/45228659001/default_default/index.html?videoId=6161694607001" allowfullscreen webkitallowfullscreen mozallowfullscreen width="250" height="167"></iframe>
+             </div>
+             
+             <div class="flex-third videoWrapper">
+              <iframe src="http://players.brightcove.net/45228659001/default_default/index.html?videoId=6161129765001" allowfullscreen webkitallowfullscreen mozallowfullscreen width="250" height="167"></iframe>
+            </div>
+                        
+            <div class="flex-third videoWrapper">
+              <iframe src="http://players.brightcove.net/45228659001/default_default/index.html?videoId=6150028006001" allowfullscreen webkitallowfullscreen mozallowfullscreen width="250" height="167"></iframe>
+             </div>
+             
+            <div class="flex-third videoWrapper">
+              <iframe src="http://players.brightcove.net/45228659001/default_default/index.html?videoId=6150122536001" allowfullscreen webkitallowfullscreen mozallowfullscreen width="250" height="167"></iframe>
+            </div>
+
+           </div>
+         </div>
+<!-- END Videos -->          
+ 
+    
+     <!-- BEGIN DATA -->
+    <div class="flex-container contain-indent padded-vertical-20 data-content">
+        <div class="white-sheer-box flex-two-third">
+         
+            <h4><a href="../datamapper/index.html">Datos</a></h4>
+              <p>Trazar y comparar datos de paises (en Inglés)</p>
+            
+              <ul class="button-list">
+                <li><a href="#" class="btn">Economía mundial</a></li>
+                  <li><a href="#" class="btn">Monitor Fiscal</a></li>
+              </ul>
+              <ul class="button-list">
+                  <li><a href="#" class="btn">África</a></li>
+                  <li><a href="#" class="btn">Deuda global</a></li>
+              </ul>
+          
+            </div>
+              <div class="flex-third align-self-bottom align-right">
+                  <a href="https://www.imf.org/en/Data" class="btn text-small right-float">Más datos</a>
+              </div>
+     </div>
+     <!-- END DATA -->
+ 
+     
+     
+     <!-- BEGIN LATEST RELEASES -->
+    <div class="flex-container flex-wrap padded-vertical-20 bg-lightest-grey">
+          <div class="cell contain-indent">
+            <h4>Novedades</h4>
+          </div>
+          <div class="cell contain-indent">
+              <div class="home whatsnew" data-ng-controller="whatsNewCtrl" >
+           <ul>
+                    <li data-ng-repeat="module in whatsNewItems">
+                        <div class="high">
+
+                            <p><a href="https://www.imf.org/redirect/?URL=$V&amp;404;https://www.imf.org:443/external/spanish/{{ module.TitleURL }}">{{ module.Title }}</a></p>
+                            <p class="date">
+                                {{ module.DisplayDate }}<br />
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+           <a href="https://www.imf.org/external/what/what.aspx?lang=esl&amp;pn=1&amp;order=d" class="btn right-float">Más novedades</a>
+        </div>
+          </div>
+       
+     </div>
+     <!-- END LATEST RELEASES -->
+         
+     
+               <!-- BEGIN BANNERS -->
+      <div class="flex-wrap padded-vertical-20 text-left">
+          <div class="flex-container contain-indent banners">
+              <div class="flex-third">
+                    <a href="http://blog-dialogoafondo.imf.org/"><img src="../19/images/banners/banner_blog_SPA.png" alt="Blog del FMI" /></a>
+                  <!-- <a href="http://blog-dialogoafondo.imf.org/" class="btn">Subscríbete</a> -->
+             </div>
+              
+           <div class="flex-third">
+                    <a href="https://www.imf.org/es/about/factsheets"><img src="../19/images/banners/banner_factsheets_SPA.png" alt="Fichas técnicas" /></a>
+                  <!-- <a href="https://www.imf.org/es/about/factsheets" class="btn bk-teal">Subscríbete</a> -->
+             </div>
+              
+               <div class="flex-third">
+                    <a href="https://www.imf.org/es/News/SearchNews"><img src="../19/images/banners/banner_CF_SPA.png" alt="Enfoque en países" /></a>
+                  <!-- <a href="https://www.imf.org/es/News/SearchNews" class="btn bk-orange">Subscríbete</a> -->
+             </div>
+       </div>
+         </div>
+     <!-- END BANNERS -->
+         
+         
+         
+            <!-- BEGIN PUBLICATIONS -->
+    <div class="flex-container flex-full flex-wrap padded-vertical-40 bg-light-grey">
+        <div class="contain-indent"><h4 class="ko no-top-margin">Publicaciones</h4></div>
+        
+        <div class="contain-indent flex-container flex-wrap publications-module">
+          <div class="card-item-small">
+              <a href="https://www.imf.org/es/Publications/WEO/Issues/2019/10/01/world-economic-outlook-october-2019"><img src="../19/images/pubs/weo.png" alt="Perspectivas de la economía mundial" /></a>
+              <ul>
+                <li><p>Octubre de 2019</p></li>
+                <li><a href="https://www.imf.org/es/Publications/WEO/Issues/2019/10/01/world-economic-outlook-october-2019">Capítulos analíticos</a></li>
+              </ul>
+          </div>
+        <div class="card-item-small">
+              <a href="#"><img src="../19/images/pubs/gfsr.png" alt="Informe sobre la estabilidad financiera mundial" /></a>
+              <ul>
+                <li><p>Abril de 2019</p></li>
+                <li><a href="http://www.imf.org/es/Publications/GFSR">Informe</a></li>
+              </ul>
+          </div>
+            <div class="card-item-small">
+              <a href="#"><img src="../19/images/pubs/fm.png" alt="Monitor Fiscal" /></a>
+              <ul>
+                <li><p>Abril de 2019</p></li>
+                <li><a href="https://www.imf.org/es/Publications/FM/Issues/2019/03/18/fiscal-monitor-april-2019">Informe</a></li>
+              </ul>
+          </div>
+
+<!--             <div class="card-item-small">
+              <a href="#"><img src="/external/19/images/pubs/esr.png" alt="External Sector Report" /></a>
+              <ul>
+                <li><p>Abril 2019</p></li>
+                <li><a href="#">Enlace</a></li>
+              </ul>
+          </div> -->
+            <div class="card-item-small">
+              <a href="https://www.imf.org/external/Pubs/FT/fandd/spa/2020/03/index.htm"><img src="../Pubs/FT/fandd/spa/2020/03/images/cover.jpg" alt="Finanzas y Desarrollo" /></a>
+              <ul>
+                <li><p>Marzo de 2020</p></li>
+                <li><a href="https://www.imf.org/external/Pubs/FT/fandd/spa/2020/03/index.htm">Revista</a></li>
+              </ul>
+          </div>
+            <div class="card-item-small">
+              <a href="https://www.imf.org/external/pubs/ft/ar/2019/eng/index.htm"><img src="../19/images/pubs/spa/ar2019-es.png" alt="Informe Anual de 2019" /></a>
+              <ul>
+                 <li><p>Septiembre de 2019</p></li>
+                <li><a href="https://www.imf.org/external/pubs/ft/ar/2019/eng/index.htm">Informe</a></li>
+              </ul>
+          </div>
+
+            <div class="card-item-small reos-item">
+                <div class="bk-teal">
+                <ul>
+									<li><h6>Informes económicos regionales</h6></li>
+									<!-- <li><a href="/external/pubs/ft/reo/reorepts.aspx?ddlYear=-1&ddlRegions=11">Africa</a></li> -->
+									<!-- <li><a href="/external/pubs/ft/reo/reorepts.aspx?ddlYear=-1&ddlRegions=4">ASIA & PACIFIC</a></li> -->
+									<li><a href="https://www.imf.org/external/pubs/ft/reo/reorepts.aspx?ddlYear=-1&amp;ddlRegions=15">EUROPA</a></li>
+									<!-- <li><a href="/external/pubs/ft/reo/reorepts.aspx?ddlYear=-1&ddlRegions=9">MIDDLE EAST & CENTRAL ASIA</a></li> -->
+									<li><a href="https://www.imf.org/external/pubs/ft/reo/reorepts.aspx?ddlYear=-1&amp;ddlRegions=12">HEMISFERIO OCCIDENTAL</a></li>
+							  </ul>
+                </div>
+          </div>
+
+        </div>
+     </div>
+     <!-- END PUBLICATIONS -->
+         
+     
+   <!-- BEGIN RESOURCES -->
+   <!--  <div class="flex-container flex-wrap padded-vertical-20 bg-lightest-grey">
+        <div class="contain-indent"><h4>Resources For</h4></div>
+        
+        <div class="contain-indent flex-container">
+          <div class="icon-text">
+              <a href="#"><i class="fal fa-users large-icon"></i></a>
+              <p class="small-caps"><a href="#">Civil Society</a></p>
+          </div>
+        <div class="icon-text">
+             <a href="#"><i class="fal fa-graduation-cap large-icon"></i></a>
+            <p class="small-caps"><a href="#">Students</a></p>
+          </div>
+        <div class="icon-text">
+             <a href="#"><i class="fal fa-newspaper large-icon"></i></a>
+            <p class="small-caps"><a href="#">Journalists</a></p>
+          </div>
+        <div class="icon-text">
+            <a href="#" ><i class="fal fa-university large-icon"></i></a>
+            <p class="small-caps"><a href="#">Legislators</a></p>
+          </div>
+        <div class="icon-text">
+            <a href="#" ><i class="fal fa-file-user large-icon"></i></a>
+            <p class="small-caps"><a href="#">Careers</a></p>
+          </div>
+        </div>
+     </div> -->
+     <!-- END RESOURCES -->
+         
+        
+        
+         <!-- BEGIN HIGHLIGHTS -->
+   <div class="flex-wrap padded-vertical-40">
+          <div class="cell contain-indent ">
+            <h4>A destacar</h4>
+          </div>
+          <div class="flex-container contain-indent highlights">
+              <div class="flex-third">
+              <ul class="text-line">
+        		<li><a href="https://www.imf.org/es/About/Factsheets/Managing-Director-Selection-Process">Proceso de selección del Director Gerente</a></li>
+                  
+        		<li><a href="http://www.imf.org/es/About/Factsheets/IMF-Lending">Préstamos del FMI</a></li>
+                  
+        	<li><a href="http://www.imf.org/es/About/Factsheets/Sheets/2016/08/01/20/33/Stand-By-Arrangement">Acuerdos de Derecho de Giro (Stand-By) del FMI</a></li>
+              </ul>
+             </div>
+              
+          <div class="flex-third">    
+           <ul class="text-line">       
+        	<li><a href="https://www.imf.org/es/news/search?type=News+Article">Artículos de actualidad</a></li>
+                  
+        <li><a href="https://www.imf.org/es/news/search?type=Press+Release">Comunicados de prensa</a></li>
+                  
+        	<li><a href="https://www.imf.org/es/news/search?type=Speech">Discursos</a></li>
+              </ul>     
+            </div>      
+          
+              <div class="flex-third">
+          <ul class="text-line">        
+          <li><a href="http://www.imf.org/es/About/Factsheets/IMF-at-a-Glance">El FMI: Datos básicos</a></li>
+                                    
+        	<li><a href="https://www.imf.org/external/np/sec/memdir/esl/officerss.htm">Altos funcionarios del FMI</a></li>
+        	
+        	<li><a href="https://www.imf.org/external/np/obp/esl/orgchts.htm">Organigrama del FMI</a></li> 
+              </ul>
+       </div>
+       </div>
+         </div>
+     <!-- END HIGHLIGHTS -->
+         
+         
+         
+            <!-- BEGIN ACCOUNTABILITY -->
+    <!-- <div class="flex-container flex-full flex-wrap padded-vertical-20 bg-lightest-grey">
+        <div class="contain-indent"><h4>Integridad</h4></div>
+        
+        <div class="contain-indent flex-container">
+          <div class="icon-text">
+              <a href="#"><i class="fas fa-phone-volume large-icon"></i></a>
+              <p class="small-caps"><a href="https://www.imf.org/external/spanish/hrd/integrity/index.htm">Línea directa en defensa de la integridad del FMI: <br />800 548 5384</a></p>
+          </div>
+         <div class="icon-text">
+             <a href="#"><i class="fal fa-lightbulb-on large-icon"></i></a>
+            <p class="small-caps"><a href="#">Independent<br />Evaluation Office</a></p>
+          </div>
+        <div class="icon-text">
+             <a href="#"><img src="/external/19/images/footer/IMF_seal.png" srcset="/external/19/images/footer/IMF_seal.svg" alt="International Monetary Fund" class="small-logo" /></a>
+            <p class="small-caps"><a href="#">Corporate<br />Responsibility</a></p>
+          </div>
+        
+        <div class="icon-text">
+            <a href="#" ><i class="fal fa-hands-heart large-icon"></i></a>
+            <p class="small-caps"><a href="#">IMF Giving<br />Together</a></p>
+          </div> 
+        </div>
+     </div> -->
+     <!-- END ACCOUNTABILITY -->
+         
+    
+   
+   <!-- END CONTENT -->       
+         
+     
+  <!-- BEGIN FOOTER --> 
+         <footer role="contentInfo" aria-label="site footer" class="page-footer">
+         <div class="flex-container contain-indent padded-vertical-40">
+             
+             <div class="cell align-self-top flex-quarter">
+          <a href="https://www.imf.org/external/index.htm"><img src="../19/images/footer/IMF_seal.png" srcset="/external/19/images/footer/IMF_seal.svg" alt="International Monetary Fund" class="foot-logo" /></a>
+      </div>
+ 
+    
+      
+   <div class="flex-three-quarter footer-links text-right">
+      <ul>
+        <li><a href="index.html">P&aacute;gina inicial</a></li> 
+
+        <li><a href="../esl/terms.html">Derechos de autor y uso</a></li>
+        <li><a href="../esl/privacy.html">Pol&iacute;tica de privacidad</a></li>
+
+       <li><a href="https://www.imf.org/external/np/exr/esl/contactss.htm">Contacte con el FMI</a></li>
+       <li><a href="hrd/integrity/index.html">L&iacute;nea directa en defensa de la integridad del FMI</a></li>
+      </ul> 
+   
+      <ul>
+        <li><a href="https://www.imf.org/es/News/SearchNewshttps://www.imf.org/es/News/SearchNews">Noticias</a></li>
+        <li><a href="https://www.imf.org/external/mmedia/view.aspx?st=Language&amp;variable=Spanish&amp;variableId=17">Videos</a></li>
+        <li><a href="https://www.imf.org/external/what/what.aspx?lang=esl&amp;pn=1&amp;order=d">Novedades</a></li>
+        <li><a href="https://www.imf.org/es/news/search?type=Press+Release">Comunicados de prensa</a></li>
+        <!-- <li><a href="/en/Publications">Publications</a></li>
+        <li><a href="/external/social.htm">Social Media Hub</a></li> -->
+
+      </ul>
+    
+<!--       <ul>
+        <li><a href="/external/privacy.htm">Privacy Policy</a></li>
+        <li><a href="/external/np/exr/esl/contactss.htm">Contacto</a></li>
+        <li><a href="/external/np/adm/rec/recruit.htm">Careers</a></li>
+        <li><a href="/external/np/exr/glossary/index.asp">Glossary</a></li>
+        <li><a href="/external/scams.htm" title="Scam Alert">Scam Alert</a></li>
+      </ul> -->
+    
+      <ul class="navlanguage">
+        <li lang="ar" xml:lang="ar"><a href="../arabic/index.html" title="Arabic">&#1593;&#1585;&#1576;&#1610;</a></li>
+        <li lang="ch" xml:lang="ch"><a href="../chinese/index.html" title="Chinese">&#20013;&#25991;</a></li>
+        <li lang="fr" xml:lang="fr"><a href="../french/index.html" title="French">Fran&#231;ais</a></li>
+        <li lang="ja" xml:lang="ja"><a href="../japanese/index.html" title="Japanese">&#26085;&#26412;&#35486;</a></li>
+        <li lang="ru" xml:lang="ru"><a href="../russian/index.html" title="Russian">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a></li>
+       <!--  <li lang="es" xml:lang="es"><a href="/external/spanish/index.htm" title="Spanish" class="last">Espa&#241;ol</a></li> -->
+      </ul>
+             </div>  
+      
+
+                 
+             </div>
+             <div class="flex-container contain-indent padded-vertical-20">
+                 
+                 <div class="cell flex-half text-left">
+                     <p class="small-grey-text all-caps">&copy; 2020 Fondo Monetario Internacional. Todos los derechos reservados.</p>
+                 </div>
+                 
+                 
+             <div class="cell flex-half align-right text-right">
+        <ul class="social-hz">
+            <li><a href="http://www.twitter.com/FMInoticias" target="_blank" class="fab fa-twitter" title="S&iacute;guenos en Twitter"></a></li>
+            <li><a href="https://www.facebook.com/IMFAmericas" class="fab fa-facebook-f" target="_blank" title="Encu&eacute;ntranos en Facebook"></a></li>
+            <li><a href="http://www.linkedin.com/company/international-monetary-fund" class="fab fa-linkedin-in" target="_blank" title="S&iacute;guenos en LinkedIn"></a></li>
+            <li><a href="https://www.instagram.com/the_imf/" class="fab fa-instagram" target="_blank" title="S&iacute;guenos en Instagram"></a></li>
+            <li><a href="http://www.youtube.com/imf" class="fab fa-youtube" target="_blank" title="S&iacute;guenos en Youtube"></a></li>
+            <li><a href="https://www.imf.org/external/pubs/ft/survey/so/podcast.aspx" class="far fa-podcast" title="Podcasts del FMI"></a></li>
+            <li><a href="http://www.flickr.com/imfphoto" class="fab fa-flickr" target="_blank" title="S&iacute;guenos en Flickr"></a></li>
+            <li><a href="../cntpst/index.html" class="fas fa-envelope-open-text" title="Notificaciones por correo electr&oacute;nico"></a></li>
+        </ul>
+      </div>
+ </div>
+</footer>
+  <!-- BEGIN FOOTER -->  
+         
+</div> <!-- End Grid Container  --> 
+<!-- END PAGE CONTENT --->    
+    
+    
+    
+<!-- The JavaScript -->
+   <script
+  src="../../../code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <!-- Slider js -->
+    <script class="rs-file" src="../19/js/jquery.royalslider.min.js"></script>
+    
+  <!-- Droopmenu js -->
+       
+        <script type="text/javascript" src="../19/js/droopmenu-min.js"></script>
+    
+    <script type="text/javascript" src="../19/js/scripts-SPA-min.js"></script>
+    
+    
+		<script type="text/javascript">
+		
+		/*	--------------------------------------------------
+			:: Initialize mega menu
+			-------------------------------------------------- */
+			jQuery(function($){
+				$('.droopmenu-navbar').droopmenu({
+					dmArrow:true,
+					dmArrowDirection:'dmarrowup'
+				});				
+			});
+			
+        </script>  
+
+<!--Omniture Tracking Code--> 
+<script language="JavaScript" type="text/javascript" src="../OmnitureCommonScripts/CommonScripts.js"></script> 
+<script type="text/javascript">_satellite.pageBottom();</script> 
+
+
+    <script type="text/javascript">
+   
+        
+  $(document).ready(function() {
+     
+		    $(".fa-search").click(function() {
+		       $(".search-box").toggle();
+		       $("input[type='text'].search").focus();
+		     });
+ 
+         // remove utf-8 BOM from ressource "res"
+// res.charCodeAt(0) === 0xFEFF | res.charCodeAt(0) === 65279 
+if (res.charCodeAt(0) === 0xFEFF) {
+  res = res.substr(1);
+}		 
+
+     
+/* var impressionClickLinks = document.getElementsByClassName('ellipsis'); 
+	for(i=0;i<impressionClickLinks.length;i++) 
+	{ 
+	impressionClickLinks[i].addEventListener("click",ImpressionLinksClick); 
+	}*/ 
+	var impressionClickPublication = document.getElementsByClassName('slide-caption') 
+	for(i=0;i<impressionClickPublication.length;i++) 
+	{ 
+	impressionClickPublication[i].addEventListener("click",ImpressionLinksClick); 
+	} 
+	try{ 
+	
+	digitalData; 
+	} 
+	catch(err) {var digitalData="";} 
+	digitalData={ 
+	impression:{ 
+	name : s && s.pageName, 
+	event : 'impression' 
+	} 
+	}; 
+	_satellite.track('impression'); 
+	
+	/* Internal campaign impression Omniture implementation end */ 
+	});  
+</script>
+  
+
+</body>
+
+<!-- Mirrored from www.imf.org/external/spanish/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jun 2020 15:22:16 GMT -->
+</html>

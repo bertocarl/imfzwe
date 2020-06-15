@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){"hideThis"==$(".feature-banner").attr("id")&&$("body").addClass("feature-off"),$(".feature-banner").length>0&&$("body").addClass("feature-on")});

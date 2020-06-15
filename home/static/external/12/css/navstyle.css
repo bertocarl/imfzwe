@@ -1,0 +1,252 @@
+
+/* this blocks out all links on the rest of the page - fix when we do dropdown
+.oe_overlay{
+	background:#000;
+	opacity:0;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+} */
+ul.oe_menu{
+	list-style:none;
+	position:relative;
+	margin:0 0 0 14px;
+	width:1025px;
+	float:left;
+	clear:both;
+	z-index:999999;
+	background:#fff;
+}
+.social ul.oe_menu{
+	width:90%;
+}
+ul.oe_menu > li{
+	/* width:95px; */
+	height:30px;
+	padding:0 20px 0 0;
+	float:left;
+	position:relative;
+	text-align:left;
+}
+ul.oe_menu > li:last-child {
+	padding-right:0;
+}
+ul.oe_menu > li > a{
+	display:block;
+	color:#2c2825;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:11px;
+	height:20px;
+	padding:6px 1px 0;
+	margin:1px;
+    text-transform:uppercase;
+	font-weight:500;
+}
+ul.oe_menu > li > a:hover,
+ul.oe_menu > li.selected > a{
+	color:#3979a6;
+	opacity:1.0;
+}
+.oe_wrapper ul.hovered > li > a{
+	background:#fff;
+	text-shadow:0px 0px 1px #FFF;
+}
+ul.oe_menu div{
+	position:absolute;
+	top:30px;
+	left:1px;
+	background:#fff;
+	width:1025px;
+	height:190px;
+	padding:10px 20px;
+	display:none;
+}
+ul.oe_menu div.nv-news {
+	left: -526px;
+}
+ul.oe_menu div.nv-research {
+	left: -203px;
+}
+ul.oe_menu div.nv-about {
+	left: -96px;
+	left: -97px\9;
+}
+ul.oe_menu div.nv-country {
+	left: -282px;
+}
+ul.oe_menu div.nv-data {
+	left: -644px;
+}
+ul.oe_menu div.nv-news ul {
+	width: 120px;
+}
+ul.oe_menu div ul li {
+	margin-bottom:7px;
+}
+ul.oe_menu div ul li a {
+	line-height:1.1em;
+}
+ul.oe_menu div.nv-pub {
+	left: -696px;
+}
+ul.oe_menu div ul:last-child {
+	margin-right:0;
+}
+ul.oe_menu div ul.feat {
+	width:150px;
+}
+ul.oe_menu div ul.feat li p.caption a {
+	margin-top:-10px;
+	font-size:11px;
+	padding:0;
+}
+ul.oe_menu div ul li a{
+	text-decoration:none;
+	color:#222;
+	padding:2px 2px 2px 4px;
+	margin:2px;
+	display:block;
+	font-size:12px;
+}
+ul.oe_menu div ul.country {
+	width:640px;
+}
+ul.oe_menu div ul.country li.oe_heading {
+	float:none!important;
+}
+ul.oe_menu div ul.country li {
+	float:left!important;
+}
+
+ul.oe_menu div ul.country li a{
+	text-decoration:none;
+	color:#222;
+	padding:2px 12px 2px 0;
+	margin:2px;
+	font-size:12px;
+}
+ul.oe_menu div ul.oe_full{
+	width:100%;
+}
+ul.oe_menu div ul li a:hover{
+	background:#3979a6;
+	color:#fff;
+}
+ul.oe_menu li ul{
+	list-style:none;
+	float:left;
+	width: 200px;
+	margin-right:10px;
+}
+li.oe_heading{
+	color:#aaa;
+	font-size:16px;
+	margin-bottom:5px!important;
+	padding-bottom:3px;
+	border-bottom:1px solid #ddd;
+}
+
+/* journalists area */
+ul.oe_menu div.nv-news ul.journ {
+	width:158px;
+	margin-right:0;
+}
+.nv-news ul.journ li,
+.nv-news ul.journ li a {
+	font-size:12px;
+	font-family:MuseoSans-300;
+	color:#3979a6;
+	padding-left:0;
+	display:inline-block;
+}
+.nv-news ul.journ li.oe_heading {
+	font-size:16px;
+	border-bottom:none;
+	margin-bottom:5px;
+	padding-bottom:0;
+}
+ul.oe_menu div.nv-news ul.journ li a.btn {
+	background:#3979a6!important;
+	color:#fff;
+	padding:5px 10px;
+}
+ul.oe_menu div.nv-news ul.journ li a.btn.yel {
+	background:#eea415!important;
+	
+}
+ul.oe_menu div.nv-news ul.journ li a.btn:hover {
+	background:#072549!important;
+	color:#fff;
+}
+/* active tabs */
+.home ul.oe_menu > li > a.home,
+.country ul.oe_menu > li > a.countryinfo,
+.resrep ul.oe_menu > li > a.countryinfo,
+.pubs ul.oe_menu > li > a.pubs,
+.book ul.oe_menu > li > a.pubs,
+.flag ul.oe_menu > li > a.pubs,
+.data ul.oe_menu > li > a.data,
+.social ul.oe_menu > li > a.social,
+.soctab ul.oe_menu > li > a.social,
+.video ul.oe_menu > li > a.video,
+.article.webc ul.oe_menu > li > a.video,
+.data ul.oe_menu > li > a.datastats,
+.fin ul.oe_menu > li > a.datastats,
+.datasc ul.oe_menu > li > a.datastats,
+.research ul.oe_menu > li > a.resIMF,
+.capacity ul.oe_menu > li > a.capacity,
+.about.capacity ul.oe_menu > li > a.capacity,
+.about ul.oe_menu > li > a.about,
+.abt ul.oe_menu > li > a.about,
+.article.conf.cons ul.oe_menu > li > a.about,
+.news ul.oe_menu > li > a.news,
+.journ ul.oe_menu > li > a.news,
+.events ul.oe_menu > li > a.news,
+.article.conf ul.oe_menu > li > a.resIMF {
+	color:#3979a6;
+}
+.article.conf.cons ul.oe_menu > li > a.resIMF,
+.resrep.rest ul.oe_menu > li > a.countryinfo,
+.flag.abt ul.oe_menu > li > a.pubs,
+.book.about ul.oe_menu > li > a.pubs,
+.research.abt ul.oe_menu > li > a.resIMF,
+.abt.capacity ul.oe_menu > li > a.about,
+.research.capacity ul.oe_menu > li > a.resIMF {
+ color:#2c2825;
+}
+.resrep.rest ul.oe_menu > li > a.resIMF,
+.research.abt ul.oe_menu > li > a.about {
+color:#3979a6!important;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+     /* Add your Safari-specific styles here. */
+			ul.oe_menu div.nv-news {
+				left: -526px;
+			}
+			ul.oe_menu div.nv-research {
+				left: -203px;
+			}
+			ul.oe_menu div.nv-about {
+				left: -97px;
+			}
+			ul.oe_menu div.nv-country {
+				left: -282px;
+			}
+			ul.oe_menu div.nv-data {
+				left: -644px;
+			}
+			ul.oe_menu div.nv-pub {
+				left: -696px;
+			}
+
+}
+ /* Firefox */
+@-moz-document url-prefix()
+{
+	ul.oe_menu div.nv-about {left: -97px;}
+}

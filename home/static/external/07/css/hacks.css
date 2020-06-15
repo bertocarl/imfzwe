@@ -1,0 +1,60 @@
+/*  Clearing floats: http://annevankesteren.nl/2005/03/clearing-floats */
+#container, #content, #branding, #nav-main, .columnspan, .intro, #content-main, #content-nav, .links  {_height: 1%;}
+
+/* \*/ * html .intro {height:1%} /* */
+
+
+/* Explorer only */
+* html #navmain {font-size: 0.98em;}
+
+* html .feature {width: 49%;}
+* html body#home-layout .feature {width: 54%;}
+/* html body#channel-layout2 #content-nav {width: 217px;} */
+
+* html ul#navpage ul {margin-left: 0;}
+
+*html #siteinfo #navlanguage {padding-left:0px;}
+
+*html #searchnews input#newsSearch {display: inline; margin-left: -3px;}
+
+
+* html .firstletter {margin-top: -.5em; margin-bottom: -.5em;}
+
+
+/*fixes pekaboo bug in IE6 http://www.positioniseverything.net/explorer/peekaboo.htm */
+* html #content-nav {position: relative;} 
+* html #content-nav #navpage {position: relative;}
+* html #content-nav .notify {position: relative;} 
+
+* html ul#navpage li {height: 35px;}
+* html ul#navpage li a {height: 1px;}
+* html ul#navpage ul li {height: 1px; margin-top: 0px;}
+* html ul#navpage ul li a {height: 1px;}
+
+
+/* Mac IE fixes */
+
+ /*\*//*/
+  
+	#siteinfo {}
+	
+	.home #navlanguage {position: relative !important;}
+	.links {clear: both; padding: .5em 0; width: 100%;}
+	body#home-layout #content-main .links .column1 {width: 284px;}
+	body#home-layout #content-main .links .column2 {width: 284px; float: none !important;}
+	.links br {display: block !important;}
+
+	body#channel-layout3 #content-main {width: 565px !important;}
+	body#channel-layout3 #content-sub {width: 232px;}
+	
+	body#channel-layout2 #container {width: 800px !important; background: white; overflow: visible; text-align: center;  margin: 0 auto; position: relative;}
+	
+	body#channel-layout2 .columns {background-image: none !important;}
+	body#channel-layout2 #content-main {width: 565px !important; overflow: none !important; background: white;}
+	body#channel-layout2 #content-main .column1 {width: 260px !important; display:inline-block !important;}
+	body#channel-layout2 #content-main .column2 {width: 260px !important; display:inline-block !important;}
+	.firstletter {font-size: 2em !important; display: inline !important; float: none !important; margin-top: 30px !important; margin-bottom: 0 !important;}
+  
+	body#channel-layout3 #content-main div p {width: 400px; clear: both;}
+  
+/**/

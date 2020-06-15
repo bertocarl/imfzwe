@@ -1,0 +1,1 @@
+var s = {t:function(){console.log('Old code disbled')}}

@@ -1,0 +1,220 @@
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*  New Classes */
+
+/* for the global navigation text on top right - used instead of having images as links */
+.globalNavText{font-weight:bold; color:#CCCCCC; vertical-align:top;}
+
+/* for the global navigation text on top right - used for showing the highlighted link */
+.selectedGlobalNavText{ font-weight:bold; color:#FFFFFF; vertical-align:top; background-image:url(../images/selectGlobeNav.gif); background-repeat:repeat-x; background-position:bottom;}
+
+/* for green navigation bar background */
+.mainMenuRow{background-color:#669966; height:23px;}
+
+/* for navigation items on green bar */
+.mainNavText{font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; color:#FFFFFF; white-space:nowrap;}
+
+/* for giving background color and text layout for sub header in middle column*/
+.subHeader {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%; font-weight:bold; color:#000000; padding:2px 0px 2px 10px; background-color:#DEF1FF; height:36px; vertical-align:middle;}
+
+/* for middle column items */
+.mainHeader h1{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%; color:#000000; margin:0px 0px 0px 0px; padding:2px 0px 0px 10px; height:24px; vertical-align:middle;}
+.mainHeader1Background{background-color:#9ED5FE;}
+.mainHeader2Background{background-color:#DDDDFF;}
+
+/* for normal content */
+.bodyText{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%;}
+
+/* for space in between the columns */
+.bodyColumnPadding{padding:0px 10px 0px 10px;}
+
+/* for grey background in the middle column */
+.grayBackground{background-color:#F8F8F8;}
+
+/* for topic headers in the Highlights column */
+.topicHeading {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%; font-weight:bold; color:#000000; background-color:#EEEEEE; margin-bottom:0px;}
+
+/* for language box*/
+DIV#langBox { border: 1px solid #999933; padding:6px 10px 10px 10px; margin:0px; vertical-align: top; background-color: #ffffcc; text-align: left; width:117px; float:left;}
+
+/* space setting for image alignment (Netscape 6.0+ FIX) */
+#img1, #img2, #img3{vertical-align:bottom;}
+
+/* for homepage-A for table border in illustration area */
+.tableBorder{border:1px solid #669966; margin:0px; padding:0px;}
+
+/* for fixing table width and aligning the page to the center */
+.tableFixedCenter{width:740px; margin-left: auto; margin-right: auto;}
+
+/* for spanning the header and footer to 100 percent of the window */
+.tableWidth100percent{width: 100%;}
+
+/* for aligning content to top */
+.aligntop{vertical-align:top;}
+
+/* for proper alignment of the logo */
+.logoClass{width:60px; white-space:nowrap;}
+
+/* for constructing the global navigation - Home, What's new, etc.*/
+#globalMenu {margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; white-space:nowrap;}
+#globalMenu li{ padding:0px 0px 2px 0px; margin:0px 0px 0px 0px; vertical-align:middle; display:inline; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:100%; color:#CCCCCC; white-space:nowrap;}
+#globalMenu li a{color:#CCCCCC; white-space:nowrap; text-decoration:none;}
+
+/* for highlighting the selected menu in the global navigation */
+#globalMenu li.globalNavSelect {color:#c9cdcc; font-weight:bold; vertical-align:top; background-image:url(../images/selectGlobeNav.gif); background-repeat:repeat-x; background-position:bottom;}
+
+/* for constructing the main navigation - About the IMF, IMF at Work, etc.*/
+#mainNavigation {margin:0px 0px 0px 0px ; padding:0px 0px 0px 0px; vertical-align:middle; text-align:right;}
+#mainNavigation li{margin:0px; vertical-align:middle; display:inline; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; font-size:100%; color:#E6E6E6; white-space:nowrap;}
+#mainNavigation li a{color:#E6E6E6; white-space:nowrap; text-decoration:none;}
+
+/* for highlighting the selected menu in the main navigation */
+#mainNavigation li.mainNavSelect {color:#000000; text-decoration:none; background-color:#9ACC99; padding:4px 1px 6px 3px; margin:0px 0px 0px 0px;}
+
+/* for the seperator color in the main navigation */
+.mainNavSep{color:#9ACC99;}
+
+/* for fixing the header position at center in all browser resolutions */
+.headerFixedWidth{width:340px;}
+
+/* for the blue header with the required height and background image tiling information added */
+.headerGradient {background-image:url(../external/images/nav/bggradient.gif); background-repeat:repeat-x; height:54px;}
+
+/* for getting the required spacings in various boxes */
+.boxPadding1 {padding: 5px 0px 5px 10px;}
+.boxPadding2 {padding: 10px 40px 10px 20px;}
+.boxPadding3 {padding: 6px 6px 6px 6px;}
+.boxPadding4 {padding: 3px 0px 0px 0px;}
+.boxPadding5 {padding: 0px 10px 0px 10px;}
+.boxPadding6 {padding: 3px 0px 3px 10px;}
+.boxPadding7 {padding: 10px 10px 10px 10px;}
+td.boxPadding7 {padding: 10px 10px 10px 10px;}
+.boxPadding8 {padding: 0px 0px 0px 0px;}
+.boxPadding9 {padding: 2px 1px 2px 0px;}
+.boxPadding10 {padding: 0px 0px 0px 10px;}
+.boxPadding11 {padding: 10px 0px 10px 10px;}
+
+/* first set of controls */
+.boxPadding19{padding: 10px 1px 2px 0px;}
+.boxPadding15{padding: 10px 10px 0px 10px;}
+
+/* for the header part of Free Notification box */
+.headerNotify{background-color:#A8C2E3; height:33px;}
+
+/* for the body part of Free Notification box */
+.bodyNotify{background-color:#C1DBFC;}
+
+/* for the header part of SDR box */
+/* .headerSDR{background-color:#A4D898; height:33px;} */
+
+/* for the body part of SDR box */
+/* .bodySDR{background-color:#BBEFAF;} */
+
+/* for the dotted horizontal rule with required margin and padding corrections */
+hr.dash {border-bottom:2px dotted #cccccc; border-top-width:0px; border-left-width:0px; border-right-width:0px; width:100%; padding:3px 0px 3px 0px; margin:0px 0px 3px 0px;}
+
+/* for fixing the width of the first column (the left most column) containing the Free Notification and SDR box */
+/* .leftColWidth{width:120px;} */
+
+/* for proper alignment of the icons used for Free Notification and SDR boxes */
+/* #freeNote, #graphIcon{float:left;} */
+
+/* for proper alignment of the Global Menu in browsers other that Internet Explorer */
+/* #tableGlobalMenu{float:right;} */
+
+
+/* for applying background color to theme area */
+.backgroundGreen{background-color:#D2CCCC;}
+/* D4E1C7 */
+
+
+/* -----------    Task 5 Widget Classes -------- */
+/* Since the Task 5 Widget pages are form based, all the classes for the widget pages are prefixed with "form" */
+
+/* for fixing the width of the widget form table */
+.formTableWidth{width:460px;}
+
+/* for the border for the widget form table */
+.formTableBorder{border:1px solid #336699;}
+/*  #669966*/
+
+
+
+/* for the font used in the widget form pages */
+.formTableText{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%;}
+
+/* for the font used in the widget form pages */
+.formTableLabelText{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%;}
+
+/* for the header having the Date, Title, etc */
+.formTableHeader {background-color:#CCDDDD; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%; font-weight:bold; color:#505050; height:24px; vertical-align:middle; align:center}
+
+a.formTableHeader: {text-decoration: none;}
+a.formTableHeader:link {color: #505050;}
+a.formTableHeader:visited {color: #505050;}
+a.formTableHeader:hover, a.formTableHeader:active, a.formTableHeader:focus {color: #505050; text-decoration: underline;}
+
+/*#AFD5AF */
+
+/* for the white separator in the header */
+.formHeaderSep{border-right:1px solid #FFFFFF;}
+
+/* for the plain rows in the Search result display area */
+.formTableTdPlain{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%; border-bottom:1px solid #D2CCCC;} /* #669966;*/
+
+/* for the colored rows in the Search result display area */
+.formTableTdColor{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%; border-bottom:1px solid #D2CCCC; background-color:#EEEEDD;}
+
+/* #DDE7D6*/
+
+
+/* for the footer table having the Previous, Next and the pagination information */
+.formTableFooter {background-color:#CCDDDD; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%; font-weight: bold; height:24px; vertical-align:middle; white-space:nowrap;}
+/*a.formTableFooter {link:#505050; color:#505050; visited:#505050; hover:#505050; active:#505050;} */
+
+a.formTableFooter: {text-decoration: none;}
+a.formTableFooter:link {color: #505050;}
+a.formTableFooter:visited {color: #505050;}
+a.formTableFooter:hover, a.formTableFooter:active, a.formTableFooter:focus {color: #505050; text-decoration: underline;}
+
+/*#AFD5AF */
+
+
+/* for the Search results text */
+.formInstrText{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%; border-top:1px solid #D2CCCC;} /* #669966;*/
+
+/* for fixing the width of the dropdowns for - Country, Subject, Speaker, etc.*/
+.formDropMenuWidth{width:346px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%; margin-left:0px; margin-right:0px; margin-top:0px; margin-bottom:0px;}
+/* margin-left:2px */
+
+/* for fixing the width of the dropdowns for INS - Location, Course Category, Language, etc.*/
+.formDropMenuWidth416{width:416px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%; margin-left:0px; margin-right:0px; margin-top:0px; margin-bottom:0px;}
+/* margin-left:2px */
+
+
+/* for fixing the width of the dropdowns for - Country, Subject, Speaker, etc. - regular fonr*/
+.formDropMenuRegWidth{width:346px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:100%; margin-left:0px; margin-right:0px; margin-top:0px; margin-bottom:0px;}
+/* margin-left:2px */
+
+/*Defines the width of the Coulmn - Date*/
+.formHeaderWidthDate{width:20%;}
+
+/*Defines the width of the Coulmn - Title*/
+.formHeaderWidthTitle{width:60%;}
+
+/*Defines the width of the Coulmn - Speaker*/
+.formHeaderWidthSpeaker{width:25%;}
+
+/*Defines the width of the Coulmn - Country*/
+.formHeaderWidthCountry{width:25%;}
+
+/* Defines a Font and color for an Error tag */
+.FormError{font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;color: rgb(255, 0, 0);font-weight:bold}
+
+/* new for What is this Blurb in the news pages */
+.whatIsThisDiv table {border:1px solid black; margin-top:10px; margin-bottom:10px; background-color:rgb(255, 255, 255);}
+.whatIsThisDiv p { font-family:arial,sans-serif; font-size:100%; !important; margin-top:4px; margin-right:4px; margin-bottom:4px; margin-left:8px;}
+
+.whatIsThisDivNew table {margin-top:5px; margin-bottom:5px;background-color:rgb(255, 255, 255);}
+.whatIsThisDivNew p {font-family:arial,sans-serif; font-size:100%; !important; margin-top:2px; margin-right:2px; margin-bottom:2px; margin-left:2px;}
+

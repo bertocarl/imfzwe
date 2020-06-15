@@ -1,0 +1,1106 @@
+﻿/* Silk icons provided by Mark James: http://www.famfamfam.com/ */
+/* Tango icons provided by the Tango Desktop Project http://tango.freedesktop.org/Tango_Icon_Library */
+@import url(hacksa.css); /* CSS filters and browser specific CSS */
+*  {margin: 0; padding: 0;}
+
+/*0.8125em*/
+
+body {background: #E9E9E9; color: #505050; font: 73%/150% Verdana, Helvetica, Arial, sans-serif; text-align:right; direction:rtl;}
+h2, h3, h4, h5, h6, h7, p, ul, ol, dl, address, img, hr, blockquote {margin: 0 20px; padding: 5px 0;}
+object {margin: 0;}
+
+/**** Added directional classes for arabic ****/
+/* Added directional class for RTL */
+.rtldir {direction:rtl!important;}
+/* Added directional class for LTR */
+.ltrdir {direction:ltr!important;}
+
+h6 {font-family:"Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; font-weight:bold; font-size:.9em;} 
+h1, h2, h3, h4, h5, h7 {font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; font-weight:bolder;}
+h5 {padding-bottom: 0; font-size: .9em; line-height: 1.2em;}
+h7 {font-size: .9em; clear: both; padding-bottom: 0;}
+h1 {font-size:1.7em; line-height: 1.5em;}
+h1 img {padding-bottom: 0; margin-top: -2px;}
+h2 {font-size:1.5em; line-height: 1.1em; margin: 0.6em .8em 0 0em;}
+h2.h2tight {margin-bottom:-.2em;}
+h2.pagehead {font-size:1.3em;}
+h3 {color: #3266CC; border-bottom: 1px solid #D2CCCC; margin: 0; padding: 0.6em .8em 0 0em; /*height: 16px;*/ font-size:1.3em; clear: both; margin-bottom: 0em;}
+div h4 {margin-top:.7em}
+h4 {font-size: 1.2em; clear: both; padding-bottom: 0em; font-weight:bold;}
+/* h4+p affects spacing of the the first paragraph tag after an h4 in Firefox */
+h4+p {padding-top: 0; margin-top: 0em; margin-bottom: 1em;}
+/* h4+p unique for sitemap spacing in FF */
+.map h4+p {padding-top: 0; margin-top: .5em; margin-bottom: 0em;}
+
+img, img a {border: none;}
+p img.left {margin-left: 0;} 
+p img.right {margin-right: 0;} 
+
+a {text-decoration: none; }
+a:link {color: #333;}
+a:visited {color:#666699;}
+a:hover, a:active, a:focus {color: #CA6900; text-decoration: underline;}
+
+form {margin: .5em 10px;}
+label {margin-bottom: .5em; cursor: pointer;}
+/*input, textarea {color: #191919; font: 100% Tahoma, Verdana, "Lucida Sans Unicode", Helvetica, Arial, sans-serif;}*/
+input, textarea {color: #191919; font: 100% "Lucida Sans Unicode", "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif;}
+input:hover, input:active, input:focus, textarea:hover, textarea:active, textarea:focus {/*border: #7f6619; not needed as it looks funny in FF */}
+input.text, select {padding: 2px 0; border: 1px solid #BCBCBC;}
+label, select {float: left; display: block; padding: 0;}
+input.search {width: 14em;}
+input.submit {background: url(../images/search_bg.gif) no-repeat right top; color: #FFF; border: 1px solid #023392;}
+fieldset {border: 0px; clear: both;}
+.buttonspace {margin-left:.5em;}
+#btnGO {margin-left:.5em;}
+/* margin fix for forms in layout body of page */
+.formfix input.text, select {margin:0 0 0 .8em;}
+
+dd p, blockquote p, form p {margin-right: 0;}
+
+table {margin-left: 20px; margin-bottom: 10px; border-collapse: collapse; width: 92%; font-size: .6em; border: 1px solid #333333;}
+caption {font-weight: bold; font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; background: #003399; color: #FFF;  margin-left: 19px; margin-top: 10px;  padding: .5em 0 .5em .5em; font-size: .9em; text-align: left;}
+.captionstyle{font-size:0.7em;padding-left:10px;color:Black;}
+/*td, th {padding: .5em 0 .5em .5em; font: .9em Verdana, Helvetica, Arial, sans-serif; vertical-align: top; border-left: 1px solid #333333;}*/
+td, th {padding: .5em .5em .5em 0em; font: 1em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; vertical-align: top; border-left: 1px solid #333333;}
+th {font-weight: bold;}
+.even {background-color: #E9E9E9;}
+.tablehead {font-weight:bold;}
+
+ol {list-style-position:outside; text-indent:0em; margin-right:5em}
+ul {margin-right: 2.5em;}
+ul li em {font: bold 1.1em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif;}
+
+blockquote {font: normal 1.5em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; display: block;}
+
+/* =navsecond for Arabic  */
+#navsecondARA {position:absolute;top:12px;left:1em;font-size:0.9em;}
+ul#navsecondARA {list-style-type:none;margin:0 0 1em;}
+ul#navsecondARA li {display:inline;line-height:1em;}
+ul#navsecondARA a {float:left;border-right:1px solid #fff;text-decoration:none;padding:0 .75em;}
+ul#navsecondARA li:last-child a, ul#navsecondARA li a.last, ul.contact li:last{border-right:0px;}
+ul#navsecondARA li:first-child a {padding-left:0;}
+ {border-right:0px;}
+#navsecondARA .last {border-right:0px;}
+
+/* =searchform for Arabic */
+#searchformARA {position:absolute;top:35px;left:1.5em;width:320px;margin:0;padding:0;}
+#searchformARA label {color:#fff;font-size:0.8em;display:none;margin:0;padding:0 10px 0 0;}
+#searchformARA input.search {width:260px;height:15px;margin-bottom:5px;margin-left:0;padding:2px;}
+#searchformARA input.submit {width:47px;margin-bottom:5px;margin-left:0;padding:2px;}
+#searchformARA #searchoptions {visibility:hidden;}
+#searchformARA #searchoptions label {float:left;display:inline;}
+#searchformARA #searchoptions .radio {float:left;display:inline;margin-right:5px;}
+#searchformARA legend {display:none;}
+fieldset.controls {text-align: left;}
+
+/* =navmain */
+#navmain {overflow:hidden; background:url(../images/nav_gradient_bottom.gif);width:100%;font-size:11px;width: 100%;}
+#navmain ul {margin: 0; padding: 0; list-style: none; float: right;  background: url(../images/nav_gradient.gif); z-index: 1;}
+#navmain li {float: left;}
+#navmain a {display: block; float: left; padding: 0 21px 0 22px; line-height: 23px; background: url(../images/navcornera.gif) no-repeat left top; text-decoration: none; color: #FFF;}
+#navmain a:hover, #navmain a:focus {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+
+
+/* =navmain .none tabbed style for subpages when no tab is selected in category */
+.none #navmain, .siteIndex #navmain, .map #navmain {overflow: hidden;  background: url(../images/nav_gradient_bottom.gif); font-size: 11px;width: 100%;}
+.none #navmain ul, .siteIndex #navmain ul, .map #navmain ul {margin: 0; padding: 0; list-style: none; float: right;  background: url(../images/nav_gradient.gif); z-index: 1;}
+.none #navmain li, .siteIndex #navmain li, .map #navmain li {float: left;}
+.none #navmain a, .siteIndex #navmain a, .map #navmain a {display: block; float: left; padding: 0 21px 0 22px; line-height: 23px; background: url(../images/navcornera.gif) no-repeat left top; text-decoration: none; color: #FFF;}
+.none #navmain a:hover, .none #navmain a:focus, .siteIndex #navmain a:hover, .map #navmain a:hover, .siteIndex #navmain a:focus, .map #navmain a:focus {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px;margin-top: 1px;}
+
+
+/* navigation turned on based on body class */
+.home #navmain a.home {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+.whatIMFdoes #navmain a.whatIMFdoes {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+/*Research at the IMF Change*/
+/*.resIMF #navmain a.resIMF {color: #333333; background: #FFF url(/external/07/images/navcorner.gif) no-repeat right bottom; line-height: 22px; margin-top: 2px;}*/
+.datastats #navmain a.datastats {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;} 
+.publication #navmain a.pubs {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+.about #navmain a.about {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+.news #navmain a.news {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+.countryinfo #navmain a.countryinfo {color: #333333; background: #FFF url(../images/navcorner.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+.copyright #navmain a.about, .privacy #navmain a.about {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+
+/************ BEGIN TO BE DELETED because of IDs ********************/
+/* navigation turned on based on body class */
+.home #navmain a#home {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+.whatIMFdoes #navmain a#whatIMFdoes {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+.datastats #navmain a#datastats {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;} 
+.publication #navmain a#pubs {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+.about #navmain a#about {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+.news #navmain a#news {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+.countryinfo #navmain a#countryinfo {color: #333333; background: #FFF url(../images/navcorner.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+.copyright #navmain a#about, .privacy #navmain a#about {color: #333333; background: #FFF url(../images/navcornera.gif) no-repeat left bottom; line-height: 22px; margin-top: 2px;}
+/************ END TO BE DELETED because of IDs ********************/
+
+/* =navthird */
+#navthird {background: url(../images/shade.gif) repeat-x right bottom; font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; border-top: 1px solid #FFF; border-bottom: 1px solid #FFF; font-size:1.1em;}
+#navthird ul {list-style-type: none; margin: 0; background:#BFBFBF; padding-top: 1em; padding-bottom: 1em;}
+#navthird li {background: url(../images/arrow_2a.gif) no-repeat right .4em; margin-right: -1em; padding-right: 3.5em; padding-bottom: .3em;}
+#navthird a {text-decoration: none; color: #FFF;}
+#navthird a:hover {text-decoration: underline; color:#FFF;}
+#navthird a:visited {color:#FFF;}
+
+/* Notify box */
+.notify {border: 1px solid #023392; border-top-width: 4px; margin-bottom: 2em;text-align:right;}
+#content-nav .notify {margin-top: 1em; margin-bottom: 1em;}
+.notify .icon {background: #3B7BC2 url(../images/mail_icon.gif) no-repeat 185px 2px; margin: 0; padding: .5em 3.5em .5em 0; border-top: 2px solid #69A2DE; font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; font-weight:bold;}
+.notify .noicon {background: #3B7BC2; margin: 0; padding: .5em 0 .5em 1em; border-top: 2px solid #69A2DE; font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif;}
+.notify .icon, .notify .noicon {color: #fff;}
+.notify p {line-height: 105%; padding-top: 1em; padding-bottom: 1em; margin: 0 .5em;}
+.notify p a {color: #cc6600;}
+.notify p a:visited {color: #666699;}
+
+.notify2 {border: 1px solid #333333; border-top-width: 4px; margin-bottom: 2em;}
+.notify2 .noicon {background: #7A7A7A; margin: 0; padding: .5em .5em .7em 0em; border-top: 2px solid #999999; font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; font-weight: bold;}
+
+/* yellow box */
+.yellowbox {border: 1px solid #333333; border-top-width: 4px; margin-bottom: 2em;}
+.yellowbox .noicon {background: #7A7A7A; margin: 0; padding: .5em 0 .7em .5em; border-top: 2px solid #999999; font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; font-weight: bold;}
+
+/* =navfourth */
+#navfourth {font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; border: 1px solid #999999; border-top-width: 4px;  margin: 20px;}
+#navfourth ul {list-style-type: none; margin: 0; padding-top: 1em; padding-bottom: 1em;}
+#navfourth li {background: url(../images/arrowrev.gif) no-repeat right .4em; margin-right: 1em; padding-right: 1em; padding-bottom: .3em;}
+#navfourth a {text-decoration: none; color: #666666;}
+#navfourth a:hover {text-decoration: underline;}
+#navfourth a:visited {color: #666699;}
+#navfourth h3 {color: #333333; font-size: 1em; background: #E2DEDE; margin: 0; padding: .5em 1em .5em 0em; border-top: 2px solid #FFFFFF;}
+
+/* =pagelist */
+ul.pagelist {list-style: none; padding: 0;}
+ul.pagelist li {background: url(../images/arrowrev.gif) no-repeat right .8em; margin-top: .5em;}
+.pagelist-last {margin-bottom:.8em}
+
+#content-sub ul.pagelist {list-style: none; padding: 0;}
+#content-sub ul.pagelist li {background: url(../images/arrowrev.gif) no-repeat right .9em; margin-top: .5em;}
+#content-sub .pagelist-last {margin-bottom:.8em}
+
+/* =ularrow replaces normal bullets with arrows in an ordered list */
+.ularrow {list-style: none; margin-right: 15px; }
+.ularrow ul {list-style-type: none; padding-top: 1em; padding-bottom: 1em;}
+.ularrow li {background: url(../images/arrow.gif) no-repeat right .4em; margin-right: 1em; padding-right: 1em; padding-bottom: .3em;}
+.ularrow a {text-decoration: none; color: #666666;}
+.ularrow a:hover {text-decoration: underline;}
+.ularrow a:visited {color: #666699;}
+
+/* =navpage  - adds separator line between each list item */
+ul#navpage {list-style: none; margin: 0; padding: 0 0 2em 0; font: bold 1em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; background: url(../images/shade2.gif) repeat-x right bottom;}
+ul#navpage li {margin-right: 10px;}
+ul#navpage a {display: block; color: #656565; background: url(../images/arrowrev.gif) no-repeat right 1em; border-bottom: 1px solid #D2CCCC; padding: 10px 10px 10px 0px;}
+ul#navpage li:last-child a {border-bottom: 0;}
+ul#navpage a:hover {text-decoration: none; color: #CA6900;}
+ul#navpage li a.active {background: url(../images/arrow_3.gif) no-repeat right 1.2em;  color: #CA6900; border: none;}
+ul#navpage li p.active {background: url(../images/arrow_3.gif) no-repeat -.1em 1.2em;  color: #CA6900; border: none;padding: 10px 0 10px 10px;margin-left: 0px; color:#CA6900;font-size:1em!important;}
+/*ul#navpage ul {list-style: none; padding: 0; margin: -.5em 0 0 0; font: normal .9em Verdana, Helvetica, Arial, sans-serif; border-bottom: 1px solid #D2CCCC;}*/
+ul#navpage ul {list-style: none; padding: 0; margin: -.5em 0 0 0; font: normal 1.2em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; border-bottom: 1px solid #D2CCCC;}
+ul#navpage ul li {margin-left: 10px; margin-right: 10px;}
+ul#navpage ul a {background: none; border: 0; padding: 3px 0 4px 5px;}
+ul#navpage ul a.active {background-image: none; color: #333;  font-weight: bold;}
+ul#navpage ul a.active:hover {cursor: default;} 
+
+/* =navpagenew -  no separator line between each list item */
+ul#navpagenew {list-style: none; margin: 0; padding: 0 0 2em 0; font: bold 1em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif;}
+ul#navpagenew li {margin-right: 5px; padding-left: 0.5em; padding-bottom: .2em; padding-right: 0.5em; background: url(../images/arrowrev.gif) no-repeat right 1em; }
+ul#navpagenew a {display: block; color: #656565; border-bottom: 0 solid #D2CCCC; padding: 10px 10px 10px 0px;}
+ul#navpagenew li:last-child a {border-bottom: 0;}
+ul#navpagenew a:hover {text-decoration: underline; color: #CA6900;}
+ul#navpagenew li a.active {background: url(../images/arrow_3.gif) no-repeat -.1em 1.3em;  color: #CA6900; border: none;}
+
+ul#navpagenew ul {list-style: none; padding: 0; margin: -.5em 0 0 0; font: normal .9em Verdana, Helvetica, Arial, sans-serif; border-bottom: 0;}
+ul#navpagenew ul li {margin-right: 10px; margin-right: 5px;}
+ul#navpagenew ul a {background: none; border: 0; padding: 2px 0 4px 5px;}
+ul#navpagenew ul a.active {background-image: none; color: #333333;  font-weight: bold;}
+ul#navpagenew ul a.active:hover {cursor: default;} 
+ul#navpagenew li.medialinks {margin: -.4em 0 0 1.5em;}
+ul#navpagenew a.linone {background:none; margin:0!important; padding:0!important; display:inline;font-weight:normal!important;}
+ul#navpagenew ul.last {border-bottom: 0;}
+
+
+
+
+/* =layout */
+/* =container */
+/*#container {width: 800px; background: #fff; left: 50%; position: relative; margin-left: -400px; float: left;}
+*/
+#container {width: 800px; background: #fff; overflow: visible; text-align: center;  margin: 0 auto; position: relative;}
+
+/* =branding */
+#brandingARA {overflow: hidden; background: #3A76BC url(../images/header_bkg.gif) repeat-x right top; text-align: right;}
+#brandingARA a:link, #brandingARA a:visited {color: #FFF; text-decoration: none;}
+
+/* =content */
+#content {font-size:130%!important; /*border-bottom: 4px solid #023392; no need for this since the toplink image is replacing the border too */
+text-align:right; right:0; line-height:1.3em; overflow:auto;}
+content-main:lang(ar) {font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif;}
+content-main:lang(en) {font-family: Georgia, "Times New Roman", Times, serif!important; font-size: inherit; direction:ltr;}
+/* =content-main */
+/* =added column1sm and column2sm style throughout stylesheet for slightly smaller text and padding on pages such as the Site Map and Site Index */
+#content-main {float: right; width: 568px; min-height: 250px; padding-bottom: 2em;}
+#content-main .column1, #content-main .column1sm {float: left; overflow: hidden;}
+#content-main .column2, #content-main .column2sm {float: left; overflow: hidden;}
+#content-main .column1sm p, #content-main .column2sm p{font-size:85%;padding-bottom:0em;line-height:1.5em; font-family:}
+#content-main .column1sm ul, #content-main .column2sm ul{margin:0 3.5em 0 0;}
+#content-main .column1sm ul li, #content-main .column2sm ul li{font-size:90%;padding:0;margin:0em;}
+#content-main h1 {margin-right:.3em; padding: .5em 0 .5em 0;}
+#content-main .last {clear:left;}
+
+/** Language bar for individual pages **/
+#langbar {margin-top:0em!important; margin-bottom:.5em!important;text-align:left!important;direction:ltr; font-family:Verdana, Helvetica, Arial, sans-serif; float:left; margin-left:20px; font-size:.5em!important;font-size:.65em!important;}
+*html #langbar {margin:-2em .5em 0em .5em!important;text-align:left!important;font-size:.62em!important; direction:ltr; float:left; padding:0 0 0 0 !important;}
+#langbar ul {margin-left:20px;padding-left: 0;border: none;}
+#langbar ul li {margin-left: 0;	padding-left: 0em;border: none;list-style: none;display: inline;}
+#langbar ul li:before {content: "\0020 \0020 \0020 \25a0 \0020";color:#FF962D;}
+*html #langbar ul li{ background:url(../../images/orsqbullet.png) no-repeat 0 center; padding-left:10px;padding-right: 2px; margin-right:0; margin-left:0px;}
+*html #langbar ul li.first {background:none;}
+#langbar ul li.first:before {content: " ";}
+/* For Opera 9.x */
+html:first-child #langbar {font-size:.7em!important;}
+/* IE 7 Hack */
+*:first-child+html #langbar {font-size:.60em!important;}
+*:first-child+html #langbar ul li {background:url(../../images/orsqbullet.png) no-repeat 0 center; padding-left:10px;padding-right: 2px;}
+*:first-child+html #langbar ul li.first {background:none;}
+
+/* Add print-friendly icon */
+/* Add container for print-friendly icon icon layout in h2 titles */
+.piconbox {width:98%;}
+.piconboxh1 {width:98%;}
+.piconboxh2 {width:98%; margin:1em 0 1em .5enm;}
+/* For Arabic orientation */
+.pficon {text-align:left; border-bottom:0!important; border-top:0!important;margin-bottom:0!important; padding-bottom:0!important;}
+/* Add print-friendly icon */
+*html .print {background:url(../../images/icons/printer.png) left center no-repeat; width:72px; height:16px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;text-align:right;padding-left: 0px; direction:ltr!important;}
+*:first-child+html .print {background:url(../../images/icons/printer.png) left center no-repeat; width:75px; height:16px;overflow:visible;display:inline-block;font-style:normal; font-size:80%;text-align:right;padding-left: 0px; direction:ltr!important;}
+.print {background:url(../../images/icons/light/printer.png) left center no-repeat; width:75px; height:16px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;text-align:right;padding-left: 0px;}
+
+
+body#channel-layout2 #content-main .piconbox {padding-bottom:0px; width:98%;}
+body#channel-layout2 #content-main .pficon {text-align:left;margin-top:0em!important;margin-bottom:0;padding:0;}
+*:first-child+html body#channel-layout2 #content-main .printpdf  {background:url(../../images/icons/printer.png) left center no-repeat; width:75px; height:16px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;text-align:right; margin-left:2em;}
+html:first-child body#channel-layout2 #content-main .printpdf, *html body#channel-layout2 #content-main .printpdf {background:url(../../images/icons/printer.png) left center no-repeat; width:75px; height:16px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;text-align:right; margin-left:2em;}
+body#channel-layout2 #content-main .printpdf {background:url(../../images/icons/printer.png) 10px center no-repeat; width:82px; height:16px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;text-align:right; margin-left:2em;}
+
+
+/* =content-sub */
+#content-sub {float: left; overflow: hidden; font-size: 0.9em;  width: 232px; padding-bottom: 1em;}
+#content-sub p {font-size:110%;}
+#content-sub h2 {font-size: 1.3em;}
+#content-sub h3 {padding-right: 0.5em;}
+#content-sub h4 {padding-top: .5em; margin-left: .5em;}
+#content-sub table {margin-left: 1px; margin-bottom: 10px; width: 99%; font-size: .9em; border: 1px solid #023392; border-top-width: 4px;}
+#content-sub .caption {margin-top: 0; padding-top: 0; width: 100%; font-size: .9em; line-height: 1.1em;}
+#content-sub caption {font-weight:bold; font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; background: #003399; color: #FFF;  margin-left: 0px; margin-top: 10px;  padding: .5em 0 .5em .5em; font-size: 1.1em; text-align: right;}
+#content-sub .weosection {background-image: url(../images/bg_stripes2.gif);}
+
+/* .sectionhilite looks identical to .sectionhilite4 with exception of paragraph font style and size used in highlights box. It has a light gray background, a thin dark gray margin spacer on top, dark blue text for the title header, and dark gray hyperlinks for the items. */
+#content-sub .sectionhilite {background: #D5D7DA url(../images/bg_stripes.gif) repeat-x right top; padding: 0.5em 0; min-height: 120px;}
+#content-sub .sectionhilite p {font-size: 1.2em; font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif;}
+#content-sub .sectionhilite h4 {margin-bottom: .6em;}
+#content-sub .sectionhilite h5 {font-family: Verdana, Helvetica, Arial, sans-serif; font-weight: bold; padding-bottom: .5em;}
+#content-sub .sectionhilite a {color: #333 !important; font-size: 1.1em;}
+#content-sub .sectionhilite a:visited {color: #666699 !important; font-size: 1.1em;}
+#content-sub .sectionhilite img {margin: 0 1em;}
+
+/* Adds a break to the two-column layout to allow one column break for wider content */
+#content-colbreak {clear:both; width:800px; text-align:right!important;}
+
+/* sectionhilite2 a dark gray background, blue text for the title header, and white hyperlinks for the items. */
+#content-sub .sectionhilite2 {border: 1px solid #6B837A; background: #A3A8AB; padding: .5em 0; clear: both;}
+#content-sub .sectionhilite2 p {margin-right: 1.5em;}
+#content-sub .sectionhilite2 a {color: #FFF !important; font-size: 1.1em;}
+
+/* sectionhilite3 has a light blue background and white text title header, a light gray space margin on top, and a lighter gray background for dark gray hyperlinked items. */
+#content-sub .sectionhilite3 {background: #ccc; padding: .5em 0; clear: both;}
+#content-sub .sectionhilite3 p { margin-right: 1.5em;}
+#content-sub .sectionhilite3 a {color: #333 !important; font-size: 1.1em;}
+#content-sub .sectionhilite3 a:visited {color: #666699 !important; font-size: 1.1em;}
+.sectionhilite3 {border-top: 4px solid #023392; margin-top: 2em; margin-bottom: 2em; padding: 0 !important; border-bottom: none;}
+.sectionhilite3 h3 {margin: 0; padding: 5px 10px 10px 0; border-top: 2px solid #99CCFF; font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; color: #FFF; background-color: #6699CC;}
+
+/* sectionhilite4 looks identical to .sectionhilite with exception of paragraph font style and size used in highlights box.  */
+#content-sub .sectionhilite4 {background: #D5D7DA url(../images/bg_stripes.gif) repeat-x right top; padding: 0.5em 0; min-height: 120px;}
+#content-sub .sectionhilite4 p {font: 1.1em/1.5em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif;}
+#content-sub .sectionhilite4 a {color: #333 !important; font-size: 1.1em;}
+#content-sub .sectionhilite4 a:visited {color: #666699 !important; font-size: 1.1em;}
+#content-sub .sectionhilite4 img {margin: 0 1em;}
+/*#content-sub .sectionhilite p {font: 1.3em/1.5em;}*/
+
+/* =content-nav */
+#content-nav {width: 218px; float: right; padding-top: 0.5em; margin-left:-568px; }
+#content-nav img {margin: 0 10px;}
+
+/* Back to top link image for footer */
+#toplink {background:url(../../images/top_back.png) center center no-repeat}
+/*Add top button hack for IE6 */
+*html .topbutton {background:url(../../images/top.png) left center no-repeat; margin-right:720px;width:17px; height:19px;display:inline-block /*quirks mode*/;overflow:visible; text-align:left;} 
+/*Add top button hack for FF and Safari. Double display:inline-block styling for Safari 3.0 and -moz-inline-box for FF */
+.topbutton {background:url(../../images/top.png) left center no-repeat; margin-right:720px;width:17px; height:19px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block/*quirks mode*/;text-align:left;}
+/* Add top button icon hack for Opera 9.x */
+html:first-child .topbutton {background:url(../../images/top.png) left center no-repeat; margin-right:720px;width:17px; height:19px;display:inline-table;overflow:visible;text-align:left;}
+/* Add top button hack for IE 7 only */
+*:first-child+html .topbutton {background:url(../../images/top.png) left center no-repeat; margin-right:720px;width:17px; height:19px;display:inline-block;overflow:visible;text-align:left;}
+
+/* Add container for arrow icon layout in siteindex */
+.arrowcont {width:100%;height:2em; }
+/* IE Hack */
+.toplace {text-align:right;margin-top:-18px;margin-bottom:-10px;padding:0 5px 15px 0}
+/* Add top icon */
+.topicon {background:url(../../images/top_ind.png) right center no-repeat;width:13px; height:15px; display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;}
+.topicon2 {background:url(../../../danielle/images/top_ind2.png) right center no-repeat;width:9px; height:9px; display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;}
+
+/* =siteinfoARA aka FOOTER */
+#siteinfoARA {/*border-top:2px solid #69A2DE; dont need this since it is in the toplink style*/width: 100%;background: #528ED1 url(../images/ARseal_2.gif) no-repeat 723px 5px; float: left;  padding: 1.5em 0; font-size: 89%;direction:ltr!important;}
+#siteinfoARA ul {list-style-type: none; margin: 0; margin-right: 80px; float: left; display: inline; padding: 3px 0; float:right;}
+#siteinfoARA li {display: inline; line-height: 0.9em; font-size: 1em;}
+#siteinfoARA a {color: #fff; float: left; border-right: 1px solid #fff; padding: 0.20em 0.75em; text-decoration: none;}
+#siteinfoARA ul li:last-child a, #siteinfoARA .last {border-right: 0;}
+*html #siteinfoARA #navlanguage {margin-top: 0; clear: both; width: 80%;direction:ltr!important;}
+
+
+/* placement of language nav in Arabic */
+/*.home #navlanguage {position: absolute; top: 80px; left: 420px; font-size: 0.9em;}
+.news #navlanguage {display: none;}
+.whatIMFdoes #navlanguage {display: none;}*/
+/* =navlanguage */
+#navlanguage li {display:inline; list-style-type:none;}
+#navlanguage a {text-decoration: none;}
+#navlanguage li:first-child a {padding-left: .5em;}
+/*IE Hack */
+*html .home #navlanguage {position:absolute;top:80px;}
+.home #navlanguage {position:absolute; left:10px; top:75px;}
+
+/* This style affects the links (link is highlighted) in the footer dependant on page user is on */
+.home #siteinfoARA a.homeBtm,
+.what #siteinfoARA a.whatBtm,
+.datastats #siteinfoARA a.dataStatsBtm,
+.publication #siteinfoARA a.pubsBtm,
+.about #siteinfoARA a.aboutBtm,
+.news #siteinfoARA a.newsBtm,
+.map #siteinfoARA a.mapBtm,
+.siteIndex #siteinfoARA a.siteIndexBtm,
+.contact #siteinfoARA a.contactBtm,
+.glossary #siteinfoARA a.termBtm,
+.privacy #siteinfoARA a.priBtm,
+.copyright #siteinfoARA a.crightBtm,
+.whatIMFdoes #siteinfoARA a.whatIMFdoesBtm,
+/*.resIMF #siteinfoARA a.resIMFBtm,*/
+.countryinfo #siteinfoARA a.countryInfoBtm {color:#393d3e;font-weight:bold;}
+
+/**** BEGIN TO BE DELETED ****/
+/* This style affects the links (link is highlighted) in the footer dependant on page user is on */
+.home #siteinfoARA a#homeBtm,
+.what #siteinfoARA a#whatBtm,
+.datastats #siteinfoARA a#dataStatsBtm,
+.publication #siteinfoARA a#pubsBtm,
+.about #siteinfoARA a#aboutBtm,
+.news #siteinfoARA a#newsBtm,
+.map #siteinfoARA a#mapBtm,
+.siteIndex #siteinfoARA a#siteIndexBtm,
+.contact #siteinfoARA a#contactBtm,
+.glossary #siteinfoARA a#termBtm,
+.privacy #siteinfoARA a#priBtm,
+.copyright #siteinfoARA a#crightBtm,
+.whatIMFdoes #siteinfoARA a#whatIMFdoesBtm,
+.countryinfo #siteinfoARA a#countryInfoBtm {color:#393d3e;font-weight:bold;}
+/**** END TO BE DELETED ****/
+
+/* created class highlights for top navigation in header -- cannot use same ID on same page */
+.what a.whatHilite,
+.map a.mapHilite,
+.siteIndex a.siteIndexHilite,
+.contact a.contactHilite,
+.glossary a.termHilite {color: #393d3e!important;font-weight: bold;}
+a,#navlanguage a {text-decoration:none;}
+
+/* Hide the language nav for LOE to remove duplicate language list in footer. These styles should eventually be removed once the language pages have more content to match the English. In addition, the extra language list that was manually added to the current pages should also be removed once there is more content for the LOE pages.  */
+/*Arabic*/
+.what #siteinfoARA #navlanguage,
+.datastats #siteinfoARA #navlanguage,
+.publication #siteinfoARA #navlanguage,
+.about #siteinfoARA #navlanguage,
+.news #siteinfoARA #navlanguage,
+.map #siteinfoARA #navlanguage,
+.siteIndex #siteinfoARA #navlanguage,
+.none #siteinfoARA #navlanguage,
+.contact #siteinfoARA #navlanguage,
+.glossary #siteinfoARA #navlanguage,
+.privacy #siteinfoARA #navlanguage,
+.copyright #siteinfoARA #navlanguage,
+.whatIMFdoes #siteinfoARA #navlanguage,
+.countryinfo #siteinfoARA #navlanguage {display: none;}
+/*End hiding extra language list */
+
+/***** These are template layout specifics *****/
+/*body#home-layout #content {background: url(/external/07/images/sub_background.gif) repeat-y right top;}*/
+     /* Border for column 1 */
+body#home-layout #content-main {background: url(../images/divider.gif) repeat-y 284px 5px;}
+.columnspan {background: url(../images/white_eraser.gif) repeat-y 284px 5px; padding-top: 1.5em; overflow: auto;} 
+body#home-layout #content-main .column1, body#home-layout #content-main .column1sm {width: 284px; float: right;}
+body#home-layout #content-main .column2, body#home-layout #content-main .column2sm {width: 284px; float: left;}
+body#home-layout #content-main .column1 div, body#home-layout #content-main .column2 div {width: 100%; border-bottom: 1px solid #D2CCCC; padding-top: .5em; padding-bottom: 1em;}
+body#home-layout #content-main .column1 div:last-child, body#home-layout #content-main .column2 div:last-child, body#home-layout #content-main .column1sm div:last-child, body#home-layout #content-main .column2sm div:last-child {border-bottom: 0; padding-bottom: 16em;}
+body#home-layout #content-main h3 {margin-bottom: 0; background: url(../images/white_eraser.gif) repeat-y 284px 5px;}
+
+/* #channel-layout is a 3 column layout with right-hand navigation, middle column for content, and gray left-hand side for highlights or links  */
+body#channel-layout #content {background: url(../images/divider3a.gif) repeat-y left top; min-width: 800px; overflow:hidden!important;}
+body#channel-layout #content-main {width: 350px; float: left; padding-top: 2em; margin-right: 218px; display: inline;}
+body#channel-layout #content-nav p {font-size: .9em;}
+body#channel-layout #content-sub {float: left;}
+
+/* #channel-layout2 is a 2 column layout with a short left-hand white column for navigation. Right-hand content column is a light gray */
+/*body#channel-layout2 #content {background: url(/external/07/images/divider2.gif) repeat-y 218px 0;}*/
+body#channel-layout2 #content {background: url(../images/divider2a.gif) repeat-y 577px 0;}
+body#channel-layout2 #content-main {float: left; padding-top: 2em; width: 580px;}
+body#channel-layout2 #content-nav p {font-size: .9em;}
+body#channel-layout2 #content-nav {margin-left: 0;}
+body#channel-layout2 .columns {background-image: url(../images/divider.gif); background-repeat: repeat-y; background-position: 290px 0; float:left; /*min-height: 80em;*/min-height: 200px;}
+body#channel-layout2 #content-main .column1, body#channel-layout2 #content-main .column1sm {width: 290px; float: left;}
+body#channel-layout2 #content-main .column2, body#channel-layout2 #content-main .column2sm {width: 284px; float: left;}
+body#channel-layout2 #content-main .column1 div, body#channel-layout2 #content-main .column2 div, body#channel-layout2 #content-main .column1sm div, body#channel-layout2 #content-main .column2sm div {width: 100%; border-bottom: 1px solid #D2CCCC; padding-top: 1em; padding-bottom: 1em!important;}
+body#channel-layout2 #content-main .column1 div:last-child, body#home-layout #content-main .column2 div:last-child, body#channel-layout2 #content-main .column1sm div:last-child, body#home-layout #content-main .column2sm div:last-child {border-bottom: 0; padding-bottom: 0em;}
+/* for PDF icon alignment for 2-column layout like F&D */
+body#channel-layout2 #content-main .column1 .piconbox, body#channel-layout2 #content-main .column2 .piconbox, body#channel-layout2 #content-main .column1sm .piconbox, body#channel-layout2 #content-main .column2sm .piconbox {border-bottom: 0!important; text-align:left; padding-top:0em!important;padding-bottom:0em!important;}
+/* for PDF icon alignment for generic layouts */
+body#channel-layout2 #content-main .piconbox {padding-bottom:0px; width:98%;}
+body#channel-layout2 #content-main .pficon {text-align:left;margin-top:0em!important;margin-bottom:0;padding:0;}
+body#channel-layout2 #content-main table {font-size:1em;}
+
+/* #channel-layout3 is a 2 column layout with no navigation. Left hand-side is a wider column for content and shorter right-hand side column has a gray background for highlights or links  */
+body#channel-layout3 #content-main {float: right; padding-top: 2em; padding-bottom: 3em;}
+body#channel-layout3 #content {background: url(../images/sub_background.gif) repeat-y left top; min-width: 800px;} 
+body#channel-layout3 #content-sub {float: left; /*padding-top: 18px*/}
+
+
+body.publication #searchform #searchoptions {visibility: visible;}
+
+/* #channel-layout4 is a 2 column layout with no navigation. Right hand-side is a wider column for content and shorter left-hand side column has a gray background for highlights or links  */
+body#channel-layout4 #content-main {float: left; padding-top: 2em; padding-bottom: 3em;}
+body#channel-layout4 #content {background: url(../images/sub_background.gif) repeat-y right top; min-width: 800px;} 
+body#channel-layout4 #content-sub {float: right; /*padding-top: 18px*/}
+body#channel-layout4 #content-main .column1 .piconbox, body#channel-layout4 #content-main .column2 .piconbox, body#channel-layout4 #content-main .column1sm .piconbox, body#channel-layout4 #content-main .column2sm .piconbox {border-bottom: 0!important; text-align:left;}
+body#channel-layout4 #content-main .columnspan {padding-top:0;}
+
+
+/* #channel-layout5 is a 2 column layout. Right hand-side is a wider column for content and shorter left-hand side column with a white background for highlights or links  */
+body#channel-layout5 #content-main {float: right; padding-top: 2em; padding-bottom: 3em;}
+body#channel-layout5 #content {background:#fff;min-width: 800px;} 
+body#channel-layout5 #content-sub {float: left; /*padding-top: 18px*/ background:#fff;}
+
+/* #channel-layout6 is a 2 column layout. Left hand-side is a wider column for content and shorter right-hand side column with a white background for highlights or links  */
+body#channel-layout6 #content-main {float: left; padding-top: 2em; padding-bottom: 3em;}
+body#channel-layout6 #content {background:#fff;min-width: 800px;} 
+body#channel-layout6 #content-sub {float: right; /*padding-top: 18px*/ background:#fff;}
+
+/* #layout1col is a 1 column layout with no navigation. This is for content that needs to take up the entire layout width (such as an organization chart or similar large illustration) */
+body#layout1col #content-main {float: none; width:100%; padding-top: 2em; padding-bottom: 3em;}
+body#layout1col #content {background: #fff; min-width: 800px;} 
+
+#content-nav h1, #content-nav h2, #content-nav h3, #content-nav h4 {margin-top:.5em; margin-right:.5em;}
+
+/* LEGACY STYLES TO BE DELETED ONCE THE CONVERSION IS OVER */
+body#legacy-layout #container {min-width: 800px; overflow: visible; background: #FFF;}
+body#legacy-layout #content {float: left; font-size:110%;  background: #FFF;}
+body#legacy-layout #content .menu ul, body#legacy-layout #content .menu120 ul {font-size:95% !important; list-style-image:none; list-style-position:outside; list-style-type:none;}
+body#legacy-layout #content .color2 {background-color:#CCDDDD !important;}
+body#legacy-layout #content h1, body#legacy-layout #content #dateline {margin-left: 20px;}
+body#legacy-layout #content img {margin-right: 0px;}
+body#legacy-layout #content .content a {color: #D86A22;}
+body#legacy-layout #content .content a {color: #D86A22;}
+body#legacy-layout table {margin: 0px auto; border-collapse: collapse; width: 100%; font-size: 110%; border: none;}
+body#legacy-layout td, th {padding: .5em 0 .5em .5em; font: .9em Helvetica, Arial, sans-serif; vertical-align: top; border-left: none;}
+/* END DELETION */
+
+/* =country */
+.countryglance {border: 1px solid #003399;  margin: 0 20px;}
+.countryglance h3 {background: #003399; color: #FFF;  margin: 0; padding: .5em 0 .5em .5em; font-size: 1.1em;}
+.countryglance p {font: .9em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; margin-right: .5em;}
+
+
+/* =searchnews */
+#searchnews {padding: 0px; color: #000000; margin: 0 3px;}
+#searchnews fieldset {width: 100%; margin: 0; padding: 0;}
+#searchnews label {margin-top: 7px; margin-bottom: 2px;}
+#searchnews select, #searchnews input.text {font-size: .9em; border: 1px solid #9C9C9C; width: 100%;}
+#searchnews .option2 {clear: both; margin: 0; padding: 0;} 
+#searchnews label {width: 100%;} 
+#searchnews .option2 select {width: 32.9%; float: left;}
+#searchnews .button1 {padding-top: 0px; float: right;}
+#searchnews .button2 {clear: both; float: right; padding-top: .5em; width: 50px;}
+#searchnews input#newsSearch {float: left; width: 70%;}
+fieldset.controls {text-align: right;}
+#searchnews fieldset.controls .button1, #searchnews fieldset.controls .button2 {padding-top: 0px; float: none;}
+
+/* =searchpage  -- NOT BEING USED? */
+/*#searchpage {margin: 0 20px; padding: 5px 0; width: 70%; border-top: 1px solid #8D8D8D; border-bottom: 1px solid #8D8D8D;}
+#searchpage .text {clear: both; float: left; width: 268px;}
+#searchpage .button {float: left; margin-left: 5px;}
+#searchpage fieldset {border-top: 1px solid #8D8D8D; margin: 0; padding-top: 10px;}
+#searchpage a {color: #BC8333; font-size: 80%; text-decoration: underline;}
+#searchpage .tips {clear: both;  margin-left: 275px;}
+#searchpage .radio {margin: 0  2px;}
+#searchpage label {margin-right: 30px; font-size: 80%;}*/
+
+/* =searchpage for Google look and feel emulation */
+
+/*.searchpage {margin: 0 20px; padding: 5px 0; width: 70%; border-top: 1px solid #8D8D8D; border-bottom: 1px solid #8D8D8D;}*/
+.searchpage {padding: 5px 10px;margin:0px; }
+.searchpage .text {clear: both; float: right; width: 380px; padding:.2em;font-weight:bold; font-size:1.1em;}
+.searchpage .button {float: right; margin-left: 5px;font-weight:bold!important;}
+.searchpage fieldset {margin: 0; padding-top: 0px;}
+.searchpage a {color: #BC8333; font-size: 80%; }
+.searchpage .tips {margin-right:10px; }
+.searchpage .tips a {color:#00c;}
+.searchpage .radio {margin: 0 2px;}
+.searchpage label {margin-left: 30px; font-size: 80%;}
+/** Search styles on .searchpage **/
+.h2search {font-family: Geneva, Arial, Helvetica, sans-serif;}
+.suggestedlinks {/*border:1px solid #CC6600;*/margin-bottom:.5em; background:#FDF5B1;font-family: Geneva, Arial, Helvetica, sans-serif;border-bottom: 1px solid #D2CCCC;}
+.suggestedlinks .sgreen a, .suggestedlinks .sgreen {color: #008000; font-size:.9em;}
+.suggestedlinks h3 {font-family: Geneva, Arial, Helvetica, sans-serif; border:0px; font-size:1.2em; margin-bottom:.3em; padding-right:.6em}
+.suggestedlinks p {margin-bottom:0em; font-size:1em;font-family: Geneva, Arial, Helvetica, sans-serif; color:#000;}
+.suggestedlinks p .smainlink {font-size:1.2em;}
+.suggestedlinks a {color:#00c;font-family: Geneva, Arial, Helvetica, sans-serif;font-size:1em;}
+.suggestedlinks a:hover {color:#00c;}
+.results {font-family: Geneva, Arial, Helvetica, sans-serif;}
+.resultsdoc {background:#D5DDF3; border-top:#3366CC 1px solid;margin:.5em 0em .8em 0em; padding:.3em; font-size:88%}
+.sdate {color:#3265CB;font-size: 0.8em;}
+.sdate p {margin-top:0!important; padding-top:0!important;}
+.results div {margin-bottom:1em;}
+.results .smainlink {font-size:1em;font-family: Geneva, Arial, Helvetica, sans-serif!important; font-weight:normal;}
+.results .smainlink a {color:#00c;}
+.results .sgreen {color: #008000;font-family: Geneva, Arial, Helvetica, sans-serif!important;font-size:.8em;}
+.results .sgreen a {color: #008000;font-family: Geneva, Arial, Helvetica, sans-serif!important;font-size:1em;}
+.results .sliteblue a, .results .sliteblue {color: #7777CC;}
+.sortoptionstop a, .sortoptionsbottom a {font-family: Geneva, Arial, Helvetica, sans-serif;}
+.sortoptionstop {margin: 0em; padding:0em; clear: both;}
+.sortoptionsbottom {margin-bottom: -.5em; margin-top:-1em;clear: both;}
+.shilite {font-weight:bold;}
+.sortoptionstop p, .sortoptionsbottom p {margin-right:.8em;}
+.sspell {color:#EB650C;margin:.3em .5em .8em 0em; font-size:1.2em;}
+.sspell a {font-weight:bold; color:#00c;}
+.sspell a:hover {color:#00c;}
+.noresults {font-size:1.2em;}
+.sindent {margin-right:5em;}
+.pageno {text-align:right; float:right; margin-right:1.5em;vertical-align:text-top!important;word-spacing:0em;}
+.spagelisttop {font-weight:bold; text-align:center; border-bottom: 1px solid #D2CCCC;border-top: 1px solid #D2CCCC; padding-bottom:.8em; padding-top:.8em; margin-bottom: 0em; margin-top:.5em;clear: both; font-size:85%; word-spacing:.3em;}
+.spagelistbottom {font-weight:bold; text-align:center; border-bottom: 1px solid #D2CCCC;border-top: 1px solid #D2CCCC; padding-bottom:.8em; padding-top:.8em; margin-bottom: 0em; margin-top:1em;clear: both;font-size:85%;word-spacing:.3em;}
+.spagelisttop a, .spagelistbottom a {color:#00c; margin-left:.3em!important;font-size:85%;}
+.spselect {color:#BF7500;margin-left:.3em!important;font-size:85%;}
+.google-branding {font: 11px; text-align:left; padding:0;margin-top:-2em; float:left;}
+.google-branding img {text-align:left; vertical-align: middle; margin:0; padding:0}
+
+
+/* =classes */
+.indent {padding-left: 1em; line-height: 1.2em;}
+.indent p {padding-top: 0; margin-top: 0;}
+.invisible {display: none;}
+.hilite {color: #3265CB; font-size: 0.9em;}
+#content-sub .hilite {font-size: 1em;}
+.clear {clear: both; margin: 0; padding: 0; height: 0;}
+.left {float: left;}
+.right {float: right;}
+.center {float:none; text-align:center!important;}
+.arrow {margin-left:0;margin-right:2px;padding:0;}
+.no-side-pad {padding: 0; margin: 0;}
+.small {font-size: 95% !important; line-height: 1em;}
+.smaller {font-size: 90% !important; line-height: 1em;}
+/* for site index so we can hide in the print stylesheet */
+.smalleraz {font-size: 90% !important; line-height: 1em;}
+hr {height: 0; border: 0; border-top: 1px solid #D2CCCC; margin: 1em;}
+.emlink {font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; font-weight: bold; font-size: .9em; vertical-align:bottom;}
+#content-sub .emlink {font-size: 1em;}
+h5.specialhead {margin: 0; color: #FFF; background: #528ED1; padding-left: .8em; font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; font-size: 1em; clear:both; border-top: 1px solid #FFF;}
+
+/* Highlights columns */
+.highlightsCol-1 {float:left;width:48%;border:0;}
+.highlightsCol-2 {float:right;width:48%;}
+
+
+/* Feature styles */
+.img-descript {float: right; width: 45%; border: 0; }
+#content-main .img-descript p {width: 218px; font: 100% Arial, Helvetica, sans-serif; padding: 0; margin-bottom: 14px; margin-right:15px; line-height:normal; }
+.feature {float: right; width: 52%;}
+.featurewebcast {float: right; width: 40%;}
+.img-left {float: left; width: 265px; border: 0;}
+.img-left img {margin-left: 0;}
+.img-right {float: right; width: 200px; border: 0;}
+.img-right img {margin-right: 0;}
+.sidenotes {float: left; width: 265px; border: 0;}
+.sidenotes img, .sidenotes p, .sidenotes ul  {margin-left: 0;}
+.caption {margin-top: 0; padding-top: 0; width: 90%; font-size: .6em; line-height: 1em;}
+.caption1 {margin-top: 0; padding-top: 0; width: 88%; font-size: .6em; line-height: 1em;}
+.captionrr {margin-top: 0; padding-top: 0; width: 90%; font-size: .6em; line-height: 1em;width:220px;}
+.toppadding {padding-top: 1.5em;}
+.imgtitle {border-bottom: 8px solid #E9E9E9; margin-left: 0; margin-right: 0; margin-bottom: 1.5em; float: left; width: 100%}
+.imgtitle p {font-size: .5em; line-height: 1em;}
+.intro {font: bold 1.2em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; padding-top: 0;}
+.introbull {font: bold 1.2em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; padding-top: 0; overflow: visible;}
+.tagline {font: bold 1.2em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif!important; font-style: italic; padding-top: .2em; }
+
+/* F&D Styles */
+/* For FF, Opera, and Safari */
+.fdimage {float:left; margin-top:-2.5em!important;}
+/* IE 6 & 7 hacks */
+*html .fdimage {float:left; margin-top:-1.5em!important;}
+*:first-child+html .fdimage  {float:left; margin-top:-1.5em!important;}
+/* F&DTitle colors styles */
+/* 2003 */
+.fdmaroon {color:#9E0B0F}
+/* F&D Article Styles */
+.fdarticle {/*font-family: Georgia, "Times New Roman", Times, serif;*/ font-size:1.3em; line-height:1.4em; width:90%;}
+.fdarticle p {padding-bottom:.8em; padding-top:.5em}
+.fdarticle img {padding-bottom:.8em; padding-top:.5em}
+.fdarticle h4{margin-bottom:.5em;}
+.fdarticle .hilite {font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; }
+.fdarticle .kicker {font-size:.7em;}
+*html .fdarticle li a.acrobatpdf {background:url(https://www.imf.org/~/media/Websites/IMF/imported-flagship-issues/external/images/icons/_acrobatpng.ashx) left 9px no-repeat;height:20px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:middle!important; /* Gecko needs this */overflow:visible;display:inline-block;font-size:100%!important;text-align:right;} 
+.fdarticle li a.acrobatpdf {background:url(https://www.imf.org/~/media/Websites/IMF/imported-flagship-issues/external/images/icons/_acrobatpng.ashx) left 9px no-repeat;height:20px;display:-moz-inline-box;  /* Gecko proprietary */ vertical-align:text-bottom!important; /* Gecko needs this */overflow:visible;display:inline-block;font-size:100%!important;text-align:right;}
+
+/* Survey styles */
+.surveyheader {font:1.7em "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; border-bottom:1px solid #D2CCCC;border-top:1px solid #D2CCCC; padding-right:1.5em; margin:1.5em 0 .5em 0;}
+.surveyheader span {font-style:normal;font-family:"Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman";color:#06C;font-weight:bold;}
+
+/* Add container for feed icon layout in survey head title for Arabic*/
+.sheadercontainer {width:100%;}
+.sficon {text-align:left;margin-top:-30px!important;padding:0 25px 15px 0}
+/* Add feed icon */
+.sfeed {background:url(../../images/icons/feed.png) left center no-repeat; width:76px; height:16px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;text-align:right;}
+
+/*Add Feed icon for side links for non-standards compliant IE 6 only */
+*html .sidelinkfeed {background:url(../../images/icons/feed.png) left center no-repeat!important; width:85px; height:16px;display:inline-block /*quirks mode*/;overflow:visible; font-style:normal; text-align:right;border-bottom:0!important;}
+/*Add Feed icon hack for FF and Safari. Double display:inline-block styling for Safari 3.0 and -moz-inline-box for FF */
+.sidelinkfeed {background:url(../../images/icons/feed.png) left center no-repeat!important; width:85px; height:16px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; text-align:right;border-bottom:0!important;}
+/* Add Feed icon hack for Opera 9.x */
+html:first-child .sidelinkfeed {background:url(../../images/icons/feed.png) left center no-repeat;width:85px; height:16px;display:inline-table;overflow:visible;font-style:normal; text-align:right;border-bottom: 0;}
+/* Add Feed icon hack for IE 7 only */
+*:first-child+html .sidelinkfeed {background:url(../../images/icons/feed.png) left center no-repeat; width:85px; height:16px;display:inline-block;overflow:visible;font-style:normal; text-align:right;border-bottom:0!important;}
+
+.nosideicon {background:none!important;vertical-align:middle!important; /* Gecko needs this */ margin:10px 0 10px 0!important; padding:1px 0 1px 10px!important;border-bottom:0px!important;}
+
+/* Alignment for image icons witin li tags */
+ /* global margin fix for media links */
+#content-sub .sectionhilite li.medialinks img {margin:0 .5em!important}
+.acroicon {width:16px; height:16px; top:0px; vertical-align:middle!important; padding:0; margin:0;}
+.wcicon {width:16px; height:12px; top:0px; vertical-align:middle!important; padding:0; margin:0;}
+.pcicon {width:16px; height:16px; top:0px; vertical-align:middle!important; padding:0; margin:0;}
+.commenticon {width:16px; height:16px; top:0px; vertical-align:middle!important; padding:0; margin:0;}
+.audioaicon {width:16px; height:16px; top:0px; vertical-align:middle!important; padding:0; margin:0 -3px 0 0;}
+.rssicon {width:16px; height:16px; top:0px; vertical-align:middle!important; padding:0; margin:0;}
+.mailicon {height:18px; width:19px;top:0px; vertical-align:text-bottom!important; padding:0; margin:0;}
+.lockicon {width:12px; height:13px; top:0px; vertical-align:top!important; padding:0; margin:0;}
+
+/***** Printer icon - For text 'Print PDF' *****/
+.printpdf {background:url(../../images/icons/light/printer.png) left center no-repeat; width:70px; height:16px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;text-align:left;}
+
+/***** For text 'Printable Version' *****/
+/* Add print-friendly icon */
+.print {background:url(../../images/icons/light/printer.png) left center no-repeat; width:114px; height:16px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;text-align:left;}
+
+
+/* Acrobat PDF Icon */
+.acrobatpdf {padding: 7px 0 0 20px; margin: 0; background:url(https://www.imf.org/~/media/Websites/IMF/imported-flagship-issues/external/images/icons/_acrobatpng.ashx) left 7px no-repeat;height:20px;display:-moz-inline-box;  /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-size:80%;text-align:right;}
+
+/* Printer Icon for 'Print Version ' */
+.printversion {padding: 5px 0 0 20px; margin:0; background:url(../../images/icons/light/printer.png) left 7px no-repeat; height:20px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:top; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;text-align:right;}
+
+
+/* class for feed icon alignment when inserting image in headers */
+.h1feedalign {vertical-align:middle;padding:0em;height:16px;}
+.h2feedalign {vertical-align:middle;padding:0em;height:16px;}
+.h3feedalign {vertical-align:top;padding:0em;height:16px;}
+.h4feedalign {vertical-align:top;padding:0em;height:16px;}
+*:first-child+html .h3feedalign {vertical-align:middle;padding:0em;height:16px;}
+*:first-child+html .h4feedalign {vertical-align:middle;padding:0em;height:16px;}
+*html .h3feedalign {vertical-align:middle;padding:0em;height:16px;}
+*html .h4feedalign {vertical-align:middle;padding:0em;height:16px;}
+
+/* Alignment for image icons witin li tags */
+.acroicon {width:16px; height:16px; top:0px; vertical-align:middle!important; padding:0; margin:0;}
+.wcicon {width:16px; height:12px; top:0px; vertical-align:middle!important; padding:0; margin:0;}
+.rssicon {width:16px; height:16px; top:0px; vertical-align:middle!important; padding:0; margin:0;}
+.mailicon {height:18px; width:19px;top:0px; vertical-align:text-bottom!important; padding:0; margin:0;}
+
+/* Dropcap */
+.firstletter {font-size: 4em; display: block; float: left; margin-right: .1em; top: 0px; margin-top: -0.2em; padding-top: 0px; margin-bottom: -0.2em;}
+
+.space-adjust {margin-left: 0.7em;}
+div.border {width: 100%; border-bottom: 1px solid #D2CCCC; margin-bottom: .5em; clear: both; overflow: auto;} 
+div.query {width: 100%; margin-bottom: .5em; clear: both; overflow: auto;} 
+.links {clear: both; overflow: auto; border-bottom: 9px solid #E9E9E9; padding: 0 0;}
+.linksLOE {clear: both; overflow: auto; border-bottom: 9px solid #E9E9E9; padding: 0 0;;}
+.links br {clear: both; display: none;}
+.links .arrow {float: right; clear: both; padding-top: 5px;}
+.links p a {float: left; width: 91%; margin-left: 5px; display: inline;}
+
+/* Archive links */
+.archive {clear: both; width: 100%; float: right; border-bottom: 1px solid #E9E9E9; border-top: 1px solid #E9E9E9;padding-top: 0;}
+ul.archive,ul.langlink {list-style-type:none;margin:1em 0;margin-top: 1em;}
+ul.archive li,ul.langlink li {display:inline;line-height:1em;padding:15px;}
+
+/* Contact links */
+ul.contact  {list-style-type: none; margin: 0; margin-bottom: 1em; padding-left: 12px;}
+ul.contact li {display: inline; line-height: 1em; float: left; border-right: 1px solid #fff; padding: 0 .75em;}
+ul.contact li:last {border-right: 0;}
+ul.contact a {color: #cc9933;}
+.contactSearch {width: 80%; padding-left: 15px; padding-bottom: 10px;}
+#contactSearch {padding-left: 15px; padding-bottom: 10px; margin-bottom: 0;}
+#contactSearch select {width: 80%;}
+.long {font-size: 1.2em;}
+.graph {margin: 0 0 0 4px;}
+
+/** Current RB language link style **/
+.langlink {clear: both; width: 100%; float: right; border-bottom: 1px solid #E9E9E9; border-top: 1px solid #E9E9E9;padding-top: 3px; background:#ededee;}
+ul.langlink  {list-style-type: none; margin: 0; margin-bottom: 1em; margin-top: 1em;}
+ul.langlink li {display: inline; line-height: 1em; padding: 15px;}
+
+/** Language bar for individual pages **/
+#langbar {margin-top:-2em!important; margin-bottom:.5em!important;text-align:right!important;font-size:.80em}
+#langbar ul {margin-left: 0;padding-left: 0;border: none;}
+#langbar ul li {margin-left: 0;	padding-left: 0em;border: none;list-style: none;display: inline;}
+#langbar ul li:before {content: "\0020 \0020 \0020 \25a0 \0020";color:#FF962D;}
+*html #langbar ul li{ background:url(../../images/orsqbullet.png) no-repeat 0 center; padding-left:10px;padding-right: 2px;}
+*html #langbar ul li.first {background:none;}
+#langbar ul li.first:before {content: " ";}
+/* For Opera 9.x */
+html:first-child #langbar {font-size:.7em!important;}
+/* IE 7 Hack */
+*:first-child+html #langbar ul li {background:url(../../images/orsqbullet.png) no-repeat 0 center; padding-left:10px;padding-right: 2px;}
+*:first-child+html #langbar ul li.first {background:none;}
+
+.colorlink a {color: #D86A22;}
+a.colorlink {color: #D86A22;}
+ul.regular li {margin-top: 1em;}
+ul.regulartop li {margin-top: 1em; width: 250px; font-size:.8em;}
+.survAuthor, .docSubType {font-size: .9em;}
+.survTitle {font-style:italic;}
+.caption {font-size: .8em;}
+.kicker {font: 90% "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; padding-bottom: 0; text-transform: uppercase;}
+
+/*Added smaller bullet style as another option to .box bullets without float so text will not wrap around */
+.bulletsm {padding: 10px 0px;  font: 95% "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; margin: 5px 80px 10px 10px!important;display: inline; }
+.bulletsm ul {margin: 0 40px 0 10px; list-style-type:square;}
+.bulletsm ul li {margin-bottom: 5px;}
+
+/******* DO NOT MODIFY box ********/
+/* part of original x20 design -- should not be changed or renamed otherwise it might affect items on current website */
+.box {/*border: 1px solid #CCCCCC;*/padding: 10px 0; font-size: 90%; width: 47%; margin: 5px 20px 10px 20px; float: right; display: inline;}
+.box h4 {margin: 0!important; padding: .3em .5em .3em .5em;font-size: 95%; }
+.box img {margin:0 10px;}
+.box p {padding-top: 1em; padding-bottom: 1em; margin: 0 .5em;}
+.box ul {margin: 0 2em 0 .63em;list-style-type:square;list-style-position:outside;}
+.box ul li {margin-bottom: 5px;}
+.box .left {padding:0 0 .2em .5em;}
+/******* DO NOT MODIFY box ******/
+
+/* .box1 is a light gray */
+.box1 {border: 1px solid #999999; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box1 h4 {background:#E2DEDE; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #fff; color: #333;font-family:Verdana, Arial, Helvetica, sans-serif;font-size: 100%;}
+.box1 h3 {background:#E2DEDE; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #fff; color: #333;font-family:Verdana, Arial, Helvetica, sans-serif;font-size: 105%;}
+.box1 img {margin:0 10px;}
+.box1 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box1 p img {margin-right:0px;!important}
+.box1 a {font-family:Verdana, Arial, Helvetica, sans-serif;}
+.box1 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box1 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box1 .left {padding:0 0 .2em .5em;}
+
+/******* DO NOT MODIFY box2 ******/
+/* box2 is like "notify" but a half-width left float -- part of original x20 design -- should not be changed or renamed otherwise it might affect items on current website */
+.box2 {border: 1px solid #333333; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 45%; font-size: 90%; display: inline;}
+.box2 h4 {background: #666666; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #999999; font-family: Georgia, "Times New Roman", Times, serif; color: #fff;font-size: 95%;}
+.box2 img {margin:0 10px;}
+.box2 p {padding-top: 1em; padding-bottom: 1em; margin: 0 .5em;}
+/* option to add bullets */
+.box2 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box2 ul li {margin-bottom: .5em; margin-left:.2em; text-indent:0em;}
+.box2 .left {padding:0 0 .2em .5em;}
+/******* DO NOT MODIFY box2 ******/
+
+/* .box3 is the same as box2 except it is a full width box */
+.box3 {border: 1px solid #333333; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box3 h4 {background: #666666; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #999999; font-family:Verdana, Arial, Helvetica, sans-serif; color: #fff; font-size: 100%;}
+.box3 h3 {background: #666666; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #999999; font-family:Verdana, Arial, Helvetica, sans-serif; color: #fff; font-size: 105%;}
+.box3 img {margin:0 10px;}
+.box3 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box3 p img {margin-right:0px;!important}
+/* option to add bullets */
+.box3 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box3 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box3 .left {padding:0 0 .2em .5em;}
+
+/* .box4 is a bright orange */
+.box4 {border: 1px solid #FF6600; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box4 h4 {background: #FF9900; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #FFCC00; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 100%;}
+.box4 h3 {background: #FF9900; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #FFCC00; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 105%;}
+.box4 img {margin:0 10px;}
+.box4 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box4 p img {margin-right:0px;!important}
+.box4 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box4 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box4 .left {padding:0 0 .2em .5em;}
+
+/* .box5 is a darker orange */
+.box5 {border: 1px solid #FF6600; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box5 h4 {background: #EF7B00; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #FF9900; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 100%;}
+.box5 h3 {background: #EF7B00; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #FF9900; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 105%;}
+.box5 img {margin:0 10px;}
+.box5 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box5 p img {margin-right:0px;!important}
+.box5 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box5 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box5 .left {padding:0 0 .2em .5em;}
+
+/* .box6 is a pale warm blue */
+.box6 {border: 1px solid #4F55FF; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box6 h4 {background:#9FA2FF; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #D9DAFD; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 100%;}
+.box6 h3 {background:#9FA2FF; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #D9DAFD; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 105%;}
+.box6 img {margin:0 10px;}
+.box6 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box6 p img {margin-right:0px;!important}
+.box6 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box6 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box6 .left {padding:0 0 .2em .5em;}
+
+/* .box7 is a light green */
+.box7 {border: 1px solid #084F00; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box7 h4 {background:#71C867; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #B6E1AE; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 100%;}
+.box7 h3 {background:#71C867; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #B6E1AE; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 105%;}
+.box7 img {margin:0 10px;}
+.box7 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box7 p img {margin-right:0px;!important}
+.box7 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box7 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box7 .left {padding:0 0 .2em .5em;}
+
+/* .box8 is a pale subdued green */
+.box8 {border: 1px solid #678F62; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box8 h4 {background:#ACCFA8; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #BDEFB3; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 100%;}
+.box8 h3 {background:#ACCFA8; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #BDEFB3; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 105%;}
+.box8 img {margin:0 10px;}
+.box8 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box8 p img {margin-right:0px;!important}
+.box8 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box8 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box8 .left {padding:0 0 .2em .5em;}
+
+/* .box9 is a orange-yellow */
+.box9 {border: 1px solid #DF8D00; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box9 h4 {background:#FFCC66; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #FFDE9F; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 100%;}
+.box9 h3 {background:#FFCC66; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #FFDE9F; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 105%;}
+.box9 img {margin:0 10px;}
+.box9 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box9 p img {margin-right:0px;!important}
+.box9 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box9 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box9 .left {padding:0 0 .2em .5em;}
+
+/* .box10 is a pale purple */
+.box10 {border: 1px solid #3E3F6F; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box10 h4 {background:#666699; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #CFD0FF; font-family:Verdana, Arial, Helvetica, sans-serif; color: #fff;font-size: 100%;}
+.box10 h3 {background:#666699; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #CFD0FF; font-family:Verdana, Arial, Helvetica, sans-serif; color: #fff;font-size: 105%;}
+.box10 img {margin:0 10px;}
+.box10 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box10 p img {margin-right:0px;!important}
+.box10 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box10 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box10 .left {padding:0 0 .2em .5em;}
+
+/* .box11 is a pale aqua blue */
+.box11 {border: 1px solid #009FBF; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box11 h4 {background:#99CCCC; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #DFFFFF; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 100%;}
+.box11 h3 {background:#99CCCC; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #DFFFFF; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333;font-size: 105%;}
+.box11 img {margin:0 10px;}
+.box11 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box11 p img {margin-right:0px;!important}
+.box11 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box11 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box11 .left {padding:0 0 .2em .5em;}
+
+/* .box12 is red */
+.box12 {border: 1px solid #8F0808; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box12 h4 {background:#CC0000; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #FF4F4F; font-family:Verdana, Arial, Helvetica, sans-serif; color: #fff;font-size: 100%;}
+.box12 h3 {background:#CC0000; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #FF4F4F; font-family:Verdana, Arial, Helvetica, sans-serif; color: #fff;font-size: 105%;}
+.box12 img {margin:0 10px;}
+.box12 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box12 p img {margin-right:0px;!important}
+.box12 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box12 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box12 .left {padding: 0 0 .2em .5em;}
+
+/* .box13 is burnt orange */
+.box13 {border: 1px solid #CF5300; border-top-width: 4px; margin: 10px 20px 10px 10px; float: right; width: 90%; font-size: 90%; display: inline;}
+.box13 h4 {background:#D27D30; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #EF9200; font-family:Verdana, Arial, Helvetica, sans-serif; color: #fff;font-size: 100%;}
+.box13 h3 {background:#D27D30; margin: 0!important; padding: .3em .5em .3em .5em; border-top: 2px solid #EF9200; font-family:Verdana, Arial, Helvetica, sans-serif;color: #fff;font-size: 105%; }
+.box13 img {margin:0 10px;}
+.box13 p {padding-top: .5em; padding-bottom: .5em; margin: 0 .5em;}
+.box13 p img {margin-right:0px!important;}
+.box13 a {font-family:Verdana, Arial, Helvetica, sans-serif;}
+.box13 ul {margin: 0 2em 0 .63em; list-style-type:square; list-style-position:outside;}
+.box13 ul li {margin-bottom: .5em; margin-left:.2em; margin-right:1em;text-indent:0em;}
+.box13 .left {padding: 0 .5em .2em 0!important;}
+
+#content-nav .box1 h4, #content-nav .box3 h4, #content-nav .box4 h4, #content-nav .box5 h4 , #content-nav .box6 h4, #content-nav .box7 h4, #content-nav .box8 h4, #content-nav .box9 h4, #content-nav .box10 h4, #content-nav .box11 h4, #content-nav .box12 h4, #content-nav .box13 h4 {font-size: 90%!important;}
+
+/* Overwrite box border */
+.boxthin {border-top-width: 1px!important; }
+.boxthin h4, .boxthin h3 {border-top: 0px!important;}
+
+/* Add different widths to boxes */
+.halfwidth {width:45% !important;}
+.halfwidthleft {width:45%!important; float:left;margin-right:.5em;margin-bottom:.5em;}
+.threequart {width:65% !important; float:right;}
+.threequartleft {width:65%!important; float:left;margin-right.5em;margin-bottom:.5em;}
+
+/* Add bulleted arrows to any box */
+.boxarrow {/*font-family: Georgia, "Times New Roman", Times, serif;*/}
+.boxarrow ul {list-style-type: none; margin: 0 .5em 0 .63em; }
+.boxarrow li {background: url(../images/arrowrev.gif) no-repeat right .4em; margin-right: 1em; padding-right: 1em; padding-bottom: .3em;}
+.boxarrow .interact li {background:none!important; padding-left:0em!important; margin-right:0em;}
+
+/* global style for proper alignment of left nav or right nav boxes */
+.leftnav, .rightnav {margin:.5em 0 1em 0; width:99%;}
+
+/* Add white background to box content */
+.whitebox {background:#fff;}
+
+.bold {font-weight:bold}
+
+/* Removes margin and padding for boxes */
+.nomargin {margin:0}
+.nopad {padding:0}
+
+
+/* added footnote styles */
+.footnote {clear:both;padding-top:20px;direction:rtl;}
+.ftnline {border-top:1px solid #333; width:150px;padding-top:5px;}
+.footnote p {font-size:90%;margin-top:0em;}
+/* IE 6 adjustments */
+*html .ftnline {border-top:1px solid #333; width:150px;padding-top:0px;}
+*html .footnote p {font-size:90%;margin-top:-1.5em;}
+
+/*08/23/2007 Extras*/
+.highlights {background-color: #FFF; width: 80%; padding-top: 12px; margin-bottom: -18px; }
+.SRtitle {font-size: 1.1em; font-weight: bold; color: #3266CC; font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; }
+.SRdescription {font-family: "Traditional Arabic", "Simplified Arabic", "AB Geeza", "Times New Roman", Times, serif; font-size: 1em; color: #333333; }
+ol.searchResults {padding-right: 20px; }
+.SRdate {font-size: 0.9em; color: #666666; }
+.SRsubject {font-size: 0.9em; color: #333; }
+li.searchResults {padding-bottom: 12px; }
+/*08/23/2007*/
+
+
+/*SDR BLUE BOX */
+body#home-layout #content-main .column2 div#blue {
+width:184px; margin: 0 auto; background-color:#6699cc; padding: 1px 2px 1px 18px; font-size:10px; font-weight:bold; color:#333
+}
+
+#blue .whitetext { color:#fff;}
+
+/********* Added style for organization chart 12/04/2007 ********/
+/* -- start clear div --*/
+.clearfix:after {    content:"."; 
+    display:block; 
+    height:0; 
+    clear:both; 
+    visibility:hidden; }
+.clearfix {    display:inline-block; }
+.clearfix {    display:block; }
+* html .clearfix {    height:1px; }
+/* -- end clear div --*/
+
+/** Add style for certain LOEs because of smaller font sizes **/
+#orgchartara-container {width:100%;margin: 1em auto 0em auto!important;}
+#orgchartara-container .orgchart div {margin: 0px; padding: 0; text-align: center; clear: both; }
+#orgchartara-container .orgchart .tier1 span, 
+#orgchartara-container .orgchart .tier2 span, 
+#orgchartara-container .orgchart .tier3 span {width:120px; height:65px;border:1px solid #505050;left:0px;vertical-align:middle;display:inline-block;display:-moz-inline-box;margin:auto;font-size:1em;line-height: 1.2em;float: left;padding: 4px; color:#505050;background:#E0E7FE;}
+#orgchartara-container .orgchart .middle {padding-top:1em!important;height:55px!important;}
+#orgchartara-container .orgchart .tier1 span.hline, 
+#orgchartara-container .orgchart .tier2 span.hline, 
+#orgchartara-container .orgchart .tier3 span.hline, 
+#orgchartara-container .orgchart .tier4 span.hline   {width:50px; border:0px; background:url(../../images/line-silver.gif) repeat-x center;}
+#orgchartara-container .orgchart .tier2 span.hlineshort, 
+#orgchartara-container .orgchart .tier3 span.hlineshort, 
+#orgchartara-container .orgchart .tier4 span.hlineshort  {width:10px; border:0px; background:url(../../images/line-silver.gif) repeat-x center;}
+div.vline {height:30px; border:0px; background:url(../../images/line-silver.gif) repeat-y 270px; padding:0px; margin:0px}
+div.vlinelast {height:80px; border:0px; background:url(../../images/line-silver.gif) repeat-y 270px;}
+div.hline {margin-left:270px!important;width:90px;background:url(../../images/line-silver.gif) repeat-x top;}
+div.hlinelast {margin-left:270px!important;width:90px;background:url(../../images/line-silver.gif) repeat-x center; padding-bottom:150px;}
+div.tier5vline {height:30px; border:0px; background:url(../../images/line-silver.gif) repeat-y 270px;}
+
+#orgchartara-container .orgchart .tier1 {padding-left: 20px; }
+#orgchartara-container .orgchart .tier1 span, #orgchartara-container .orgchart .tier2 span, #orgchartara-container .orgchart .tier3 span{background:#E0E7FE;}
+#orgchartara-container .orgchart .tier2 {padding-left: 210px;}
+#orgchartara-container .orgchart .tier3 {padding-left: 210px;}
+#orgchartara-container .orgchart .tier4 {margin-bottom: 0px; margin-right:25px;margin-top: -100px; height:1%; position:absolute; }
+#orgchartara-container .orgchart .tier4 span {width:90px; border:1px solid #505050;vertical-align:middle;display:inline-block;display:-moz-inline-box;margin: 0 1px 0 0px; font-size:.8em;text-decoration: none;line-height: 1.2em;white-space: normal;color: #505050;padding:3px 3px 3px 3px;background:#FEE8C7;float:left!important; }
+
+#orgchartara-container .orgchart .tier4 span.space{background:#fff; }
+#orgchartara-container .orgchart span.space {width:0px!important; border:0px!important;}
+#orgchartara-container .orgchart span.chartlines {left: 280px!important;width:340px!important; height:35px!important;border:0px!important;background:#fff url(../../images/chartlines.gif) no-repeat left!important;margin-top:20px!important;}
+#orgchartara-container .orgchart .title
+{text-align:center;font-weight:bold;background:#DFE7FF!important;margin:0 0 10px 0 !important; line-height:1.2em; border:1px solid #333; font-size:1.2em;}
+*html #orgchartara-container .orgchart .titlewide
+{text-align:center;width:295px; background:#DFE7FF!important;position:absolute;	margin:0 0 10px 0 !important; font-weight:bold;line-height:1.2em; border:1px solid #333; font-size:1.2em; left:168px;}
+#orgchartara-container .orgchart .titlewide
+{text-align:center;width:295px; background:#DFE7FF!important;position:absolute;	margin:0 0 10px 0 !important; font-weight:bold;line-height:1.2em; border:1px solid #333; font-size:1.2em; left:162px;}
+#orgchartara-container .orgchart .tier5 {font-size:.9em;width:100%;}
+
+#orgchartara-container .orgchart .tier5 .tier5group span, #orgchartara-container .orgchart .tier5 .tier5groupcol2 span  {padding-right:3px!important;}
+
+#orgchartara-container .orgchart .tier5 span.tier5group {text-align: left; width: 150px; padding-top: 0px; margin: 0px 3px 0 7px; float:left;}
+
+#orgchartara-container .orgchart .tier5 span.tier5groupcol1 {text-align: right; width: 150px; padding-top: 0px; padding-left:0px!important; margin-top: 27px!important; background:#fff!important; border:0px!important; }
+/*IE Tweak */
+*html #orgchartara-container .orgchart .tier5 span.tier5groupcol1 {text-align: right; width: 150px; padding-top: 0px; padding-left:0px!important; margin-top: 30px!important; background:#fff!important; border:0px!important; }
+/* IE Tweak*/
+#orgchartara-container .orgchart .tier5 span.tier5groupcol2 {text-align: right; width: 150px; padding-top: 0px; padding-left:0px!important; margin-top: 30px; float:left;}
+
+#orgchartara-container .orgchart .tier5 span.tier5group span {clear: both; display: block; margin: 0px; padding-top: 3px; padding-right: 0px; padding-bottom: 3px; padding-left: 5px; background:#FEECB4; border:1px solid #333; margin:5px 3px 10px 0px; line-height:1.2em; text-align:right; }
+#orgchartara-container .orgchart .tier5 span.tier5groupcol1 span, 
+#orgchartara-container .orgchart .tier5 span.tier5groupcol2 span {clear: both; display: block; margin: 0px; padding-top: 3px; padding-right: 0px; padding-bottom: 3px; padding-left: 5px; background:#FEECB4; border:1px solid #333; margin:4px 3px 10px 0px; line-height:1.2em; }
+#orgchartara-container .orgchart span span.tier6 {margin-bottom:0px!important;background:#fff!important; border:0px!important;background: url(../../images/line-silver.gif) repeat-y 48%!important;width:75%}
+#orgchartara-container .orgchart .tier6 {margin: 0 10px 0 10px!important; text-align:right; line-height:1.2em; padding:5px 5px 0px 5px!important; 
+}
+#orgchartara-container .orgchart .tier6 span {background:#EEEEDD!important; margin-bottom:0px!important; }
+#orgchartara-container span.last {margin-bottom:0px!important;}
+
+/********* End organization chart style *********/
+
+
+/* Added ID for swfobject Flash content embedding */
+#flashcontent {text-align:center;height: 100%; margin:0 auto;}
+#flashcontent p {text-align:left;}
+#altpcontent {display:none;}
+
+/* LOGO FOR HOME PAGES */
+/* Begin AR Branding tags */
+h1.logoARA a {display:block;height:66px;text-indent:-1000px;background: url(../images/arSM.gif) no-repeat 587px 15px;}
+.home h1.logoARA a {display:block;height:83px;text-indent:-1000px;background: url(../images/ar.gif) no-repeat 430px 3px;}
+.home h1.logoARA {margin-top:15px;height:83px;margin-right: 5px; background-position: 1700;}
+#searchformARA {position:absolute; top:35px; left:1.5em; width:320px; margin:0; padding:0; }
+/* End AR Branding tags */
+/* END LOGO FOR HOME PAGE */
+
+/* Flash content embedding */
+#flashcontent, .flashcontent {text-align:center;height:100%; margin:0 auto;}
+#flashcontent object, .flashcontent object {margin:0;}
+#flashcontent p, .flashcontent p {text-align:right;}
+#altpcontent, .altpcontent {display:none;}
+
+/* spring banner */
+.noborder img.spring {margin:4px 0px -3px 0!important;padding-top:0;padding-bottom:0;}
+/* podcast buttons */
+.rightbutton {
+	width:120px;
+    float: left;
+    margin-left: 35px;
+}
+.rightbutton img {
+	margin:0 5px;
+}
+.player {width:100%;}
+.linestyle{width: 100%; margin-left: 0px; }
+.leftplayer {float: right; margin:5px 5px 5px 5px;}
+.shareThisPodCast{padding: 0 20px 0 0; margin-top:5px; background:url(../../images/icons/shareThisIcon.png) right 0px no-repeat; height:16px;display:-moz-inline-box; /* Gecko proprietary */ vertical-align:middle!important; /* Gecko needs this */overflow:visible;display:inline-block;font-style:normal; font-size:80%;text-align:left;}

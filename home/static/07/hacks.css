@@ -1,0 +1,27 @@
+/*  Clearing floats: http://annevankesteren.nl/2005/03/clearing-floats */
+#container, #content, #header, #nav-main, .columnspan, .intro, #content-main, #content-nav {_height: 1%;}
+
+
+/* \*/ * html .intro {height:1%} /* */
+
+
+/* Explorer only */
+* html #navmain {font-size: 0.98em;}
+
+* html .feature {width: 49%;}
+* html body#home-layout .feature {width: 54%;}
+* html body#twoColumn-layout #content-nav {width: 217px;}
+
+* html ul#navpage ul {margin-left: 0;}
+
+*html #siteinfo #navlanguage {padding-left:0px;}
+
+*html #searchnews input#newsSearch {display: inline; margin-left: -3px;}
+
+
+* html .firstletter {margin-top: -.5em; margin-bottom: -.5em;}
+
+/*fixes pekaboo bug in IE6 http://www.positioniseverything.net/explorer/peekaboo.htm */
+* html #content-nav {position: relative;} 
+* html #content-nav #navpage {position: relative;}
+* html #content-nav .notify {position: relative;}

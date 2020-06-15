@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+   
+<!-- Mirrored from www.imf.org/external/datamapper/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jun 2020 16:22:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <base >
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" content=""/>
+      <meta property="og:url" content=""/>
+      <meta property="og:description" content=""/>
+      <meta property="og:image" content=""/>
+
+      <link href="../07/images/imf_seal.ico" type="image/ico" rel="Shortcut Icon">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+      <!--[if lte IE 9]>
+         <script src="external/polyfill/classList.min.js"></script>
+         <link href="css/ie9.css" rel="stylesheet">
+      <![endif]-->
+
+      <link rel="stylesheet" href="../../Assets/IMF/css/styles.css"><link rel="stylesheet" href="deploy/datamapper.css">
+      <style type="riot"></style>
+   </head>
+
+   <body  data-tool='datamapper'><!--#include virtual="//www.imf.org/external/15/rwd/ssi/top_feature_banner.txt" --><header role="banner">
+  <div class="header-wrap">
+  	<a href="http://www.imf.org/external/index.htm"><img src="../15/images/header/imf_seal.png" alt="IMF" /><img src="../15/images/header/imf.png" alt="International Monetary Fund" class="logo" /></a> 
+    
+   <!-- BEGIN TOP LANGUAGE NAV -->
+    <nav class="langs home">
+      <ul class="loe-langs">
+      	<li lang="en" xml:lang="en"><a title="English" href="http://www.imf.org/external/index.htm">English</a>
+         <ul>
+        <li lang="ar" xml:lang="ar"><a title="Arabic" href="../arabic/index.html">عربي</a></li>
+        <li lang="ch" xml:lang="ch"><a title="Chinese" href="../chinese/index.html">中文</a></li>
+        <li lang="fr" xml:lang="fr"><a title="French" href="../french/index.html">Français</a></li>
+        <li lang="ja" xml:lang="ja"><a title="Japanese" href="../japanese/index.html">日本語</a> </li>
+        <li lang="ru" xml:lang="ru"><a title="Russian" href="../russian/index.html">Русский</a></li>
+        <li lang="es" xml:lang="es"><a class="last" title="Spanish" href="../spanish/index.html">Español</a></li>
+      </ul>
+      </li>
+      </ul>
+    </nav>
+    <!-- END TOP LANGUAGE NAV --> 
+    
+    <!-- BEGIN SEARCH -->
+    <form id="searchform" method="get" onSubmit="window.location.href = 'https://www.imf.org/en/search#q='+getElementById('NewQuery').value+'&sort=relevancy';return false;">
+      <fieldset>
+        <input id="NewQuery" name="NewQuery" class="text search" type="text" />
+      </fieldset>
+      <button type="submit" class="mag" name="submit"></button>
+    </form>
+    <!-- END SEARCH --> 
+    
+    
+	 <!-- Omniture Tracking DTM Script begin--> 
+ <script src="../../../assets.adobedtm.com/c7b988f076dc93cc20c734bc51e87dde0b81f134/satelliteLib-834e3fe4ac4ea890c36d061e19fc6cfc1b5dc5d0.js"></script> 
+ <!-- Omniture Tracking DTM Script end -->
+  </div>
+</header><style>
+   body.embedded:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 55px;
+      background-color: #99a5b5;
+   }
+
+   body.embedded.initialized:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 55px;
+      z-index: -1;
+      background-color: #99a5b5;
+   }
+</style>
+
+<imf-component id="dm-main">
+   <div class="dm-wrapper">
+      <imf-search-panel></imf-search-panel>
+
+      <div class="dm-header">
+         <div class="dm-logo"><span>IMF</span><span>Data</span><span>Mapper</span><div class="dm-help"></div></div>
+         <imf-breadcrumbs dataset={state.dataset} group={state.group} indicator={state.indicator}></imf-breadcrumbs>
+      </div>
+
+      <imf-dataset-selector if="{show_selector}" dataset={state.dataset} group={state.group}></imf-dataset-selector>
+
+      <div if="{show_tool}" class="dm-title">
+         <h1>{ indicator.label } <div if={state.indicator} data-indicator={state.indicator} class="dm-info-button"></div></h1>
+         <h2>{ indicator.unit }</h2>
+      </div>
+
+      <radio-group if="{show_tool}" class="dm-content-panels clearfix" hash={true}>
+         <div data-babel="@data-title" data-title="map" class="dm-content-panel dm-map" data-resize={parent.indicator.resize_ind}>
+            <imf-settings settings={imf.settings.map.settings} buttons={imf.settings.map.buttons} legend-indicator={parent.state.indicator}></imf-settings>
+            <mw-map datamanager={parent.datamanager} statemanager={parent.statemanager} indicator={parent.state.indicator} geoitems={parent.state.geoitems} year={parent.year} regions={parent.dataset.regions} area={parent.dataset.maparea} mode={parent.indicator.mode}></mw-map>
+         </div>
+
+         <div data-babel="@data-title" data-title="list" class="dm-content-panel dm-list">
+            <imf-ranking dataset={parent.state.dataset} indicators={parent.state.indicators} year={parent.year}></imf-ranking>
+         </div>
+
+         <div data-babel="@data-title" data-title="chart" class="dm-content-panel dm-chart">
+            <imf-settings settings={imf.settings.chart.settings}></imf-settings>
+            <mw-chart datamanager={parent.datamanager} statemanager={parent.statemanager} indicators={parent.state.indicators} exploded={parent.state.exploded} geoitems={parent.state.geoitems} range={parent.indicator.statistics.range} future={parent.dataset.projectionyear} options={imf.chart.large}></mw-chart>
+         </div>
+
+         <mw-slider range={parent.indicator.statistics.range} step={parent.indicator.statistics.frequency} value={parent.year} on-change={parent.onYear} labels="true"></mw-slider>
+
+         <div class="dm-unit">{ parent.indicator.unit }</div>
+
+         <div class="dm-content-panel dm-legend">
+            <imf-legend indicators={parent.state.indicators} geoitems={parent.state.geoitems} year={parent.year}></imf-legend>
+         </div>
+      </radio-group>
+
+      <div if={show_tool} class="dm-aside dm-related-indicators">
+         <imf-share-panel dataset={state.dataset} indicator={state.indicator}></imf-share-panel>
+         <h3><span data-babel="#moreindicatorspre"></span>&#160;{ related.length }&#160;<span data-babel="#moreindicatorspost"></span></h3>
+
+         <swiper-panel items={related}>
+            <imf-indicator-panel dataset={parent.parent.state.dataset} indicator={item} future={parent.parent.dataset.projectionyear} on-click={imf.panel}></imf-indicator-panel>
+         </swiper-panel>
+      </div>
+
+      <div if={show_tool} class="dm-aside dm-data">
+         <imf-publications-panel dataset={state.dataset} indicator={state.indicator} geoitems={state.geoitems}></imf-publications-panel>
+      </div>
+
+      <div class="dm-footer">
+         <div id="copyright" class="dm-copyright"><span class="dm-copyright" data-babel="#copyright"></span></div>
+         <div class="dm-info" if={state.dataset}>
+            <div><div class="dm-info-caption" data-is="raw" content="{dataset.caption1}"></div><span data-is="raw" content="{dataset.intro1}"></span></div>
+            <div><div class="dm-info-caption" data-is="raw" content="{dataset.caption2}"></div><span data-is="raw" content="{dataset.intro2}"></span></div>
+            <div><div class="dm-info-caption" data-is="raw" content="{dataset.caption3}"></div><span data-is="raw" content="{dataset.intro3}"></span></div>
+            <div><div class="dm-info-caption" data-is="raw" content="{dataset.caption4}"></div><span data-is="raw" content="{dataset.intro4}"></span></div>
+         </div>
+      </div>
+   </div>
+
+   <div id="info-popup" class="dm-popup"></div>
+</imf-component>
+<footer role="contentInfo" aria-label="site footer">
+  <div class="ft-wrap">
+     <img src="../15/images/footer/footer_seal.png" alt="IMF" class="seal" />
+      <ul>
+        <li><a href="http://www.imf.org/external/" title="Home" class="homeBtm">Home</a></li>
+        <li><a href="http://www.imf.org/external/what/what.htm" title="Whats New" class="whatsNewBtm">What's New</a></li>
+        <li><a href="../sitemap.html" title="Site Map" class="mapBtm">Site Map</a></li>
+        <li><a href="../siteindex.html" title="Site Index" class="siteIndexBtm">Site Index</a></li>
+      </ul>
+   
+      <ul>
+        <li><a href="http://www.imf.org/external/about.htm" title="About the IMF" class="aboutBtm">About the IMF</a></li>
+        <li><a href="../research/index.html" title="Research at the IMF" class="resIMFBtm">Research</a></li>
+        <li><a href="http://www.imf.org/external/country/index.htm" title="Country Info" class="countryInfoBtm">Countries</a></li>
+        <li><a href="http://www.imf.org/external/news.htm" title="News" class="newsBtm">News</a></li>
+        <li><a href="http://www.imf.org/external/np/exr/seminars/index.htm" title="Events" class="eventsBtm">Events</a></li>
+      </ul>
+   
+      <ul>
+        <li><a href="../mmedia/index.html" title="Videos" class="videosBtm last">Videos</a></li>
+        <li><a href="http://www.imf.org/external/data.htm" title="Data and Statistics" class="dataStatsBtm">Data and Statistics</a></li>
+        <li><a href="http://www.imf.org/external/pubind.htm" title="Publication" class="pubsBtm">Publications</a></li>
+        <li><a href="http://www.imf.org/external/social.htm" title="Social Media" class="smhBtm">Social Media Hub</a></li>
+        <li><a href="../terms.html" title="Copyright and Usage" class="crightBtm">Copyright and Usage</a></li>
+      </ul>
+    
+      <ul>
+        <li><a href="../privacy.html" title="Privacy Policy" class="priBtm">Privacy Policy</a></li>
+        <li><a href="../np/exr/contacts/contacts-2.html" title="How to Contact Us" class="contactBtm">How to Contact Us</a></li>
+        <li><a href="http://www.imf.org/external/np/adm/rec/recruit.htm" title="Jobs" class="jobBtm">Jobs</a></li>
+        <li><a href="../np/exr/glossary/index.html" title="Glossary" class="termBtm">Glossary</a></li>
+        <li><a href="../scams.html" title="Scam Alert" class="scamalertBtm last">Scam Alert</a></li>
+      </ul>
+    
+      <ul class="navlanguage">
+        <li lang="ar" xml:lang="ar"><a href="../arabic/index.html" title="Arabic">&#1593;&#1585;&#1576;&#1610;</a></li>
+        <li lang="ch" xml:lang="ch"><a href="../chinese/index.html" title="Chinese">&#20013;&#25991;</a></li>
+        <li lang="fr" xml:lang="fr"><a href="../french/index.html" title="French">Fran&#231;ais</a></li>
+        <li lang="ja" xml:lang="ja"><a href="../japanese/index.html" title="Japanese">&#26085;&#26412;&#35486;</a></li>
+        <li lang="ru" xml:lang="ru"><a href="../russian/index.html" title="Russian">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a></li>
+        <li lang="es" xml:lang="es"><a href="../spanish/index.html" title="Spanish" class="last">Espa&#241;ol</a></li>
+      </ul>
+      
+      <!-- THE SOCIAL ICONS WILL ONLY BE VISIBLE ON MOBILE AND TABLET -->
+      <ul class="ft-social">
+             <ul>
+              <li><a href="http://www.imf.org/external/pubs/ft/survey/so/podcast.aspx" class="icon-podcast"></a></li>
+              <li><a href="http://www.twitter.com/imfnews" target="_blank" class="icon-twitter"></a></li>
+              <li><a href="http://www.linkedin.com/company/international-monetary-fund" target="_blank" class="icon-linkedin"></a></li>
+              <li><a href="http://www.imf.org/external/rss/rsslist/rsslist.aspx" class="icon-feed4"></a></li>
+              <li><a href="http://www.youtube.com/imf" target="_blank" class="icon-youtube"></a></li>
+            </ul>
+            <ul>
+              
+              <li><a href="http://www.flickr.com/imfphoto" target="_blank" class="icon-flickr2"></a></li>
+              <li><a href="../cntpst/index.html" class="icon-mail"></a></li>
+              <li><a href="http://www.imf.org/external/social.htm" target="_blank" class="icon-share2"></a></li>
+              <li><a href="http://www.imf.org/app" target="_blank" class="icon-apple"></a></li>
+              <li><a href="http://www.imf.org/gapp" target="_blank" class="icon-android"></a></li>
+            </ul>
+            </ul>
+            <!-- THE SOCIAL ICONS WILL ONLY BE VISIBLE ON MOBILE AND TABLET -->
+    </div>
+ 
+</footer>
+ <!--Omniture Tracking Code--> 
+ <script language="JavaScript" type="text/javascript" src="../OmnitureCommonScripts/CommonScripts.js"></script> 
+ <script type="text/javascript">_satellite.pageBottom();</script> 
+ <!--Omniture Tracking Code End--><!-- NOINDEX -->
+<!-- start eng/hdscript.txt -->
+<script type="text/javascript">
+<!-- hide
+//Clear inherited frames
+if (top.frames.length!=0)
+top.location=self.document.location;
+// unhide -->
+</script>
+
+
+<!-- Commenting the Old Code -->
+<!-- start s_code.js-->
+    <!-- SiteCatalyst code version: H.12.
+    Copyright 1997-2007 Omniture, Inc. More info available at
+    http://www.omniture.com -->
+ <!--   <script type="text/javascript" language="JavaScript" src="//www.imf.org/external/x10/ssi/s_code.js"></script>
+    <script type="text/javascript" language="JavaScript">
+     /* You may give each page an identifying name, server, and channel on
+     the next lines. */
+     s.pageName=""
+     
+     
+     /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+     var s_code=s.t();
+     
+     if(s_code)document.write(s_code)</script> -->
+    <!-- End SiteCatalyst code version: H.12. -->
+    <!-- stop s_code.js -->
+    <script type="text/javascript" language="JavaScript" src="../x10/ssi/gatag.js"></script> 
+    <!-- Start Google Analytics Code -->
+<script type="text/javascript">    
+var _gaq = _gaq || [];   
+_gaq.push(['_setAccount', 'UA-3984706-1']);   
+_gaq.push(['_trackPageview']);   
+
+(function() {     
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  
+</script>
+<!-- End Google Analytics Code -->
+<!--// ForeSee Production Embed Script v2.00 Start-->
+<Script type="text/javascript">
+// ForeSee Production Embed Script v2.00
+// DO NOT MODIFY BELOW THIS LINE *****************************************
+;(function (g) {
+var d = document, am = d.createElement('script'), h = d.head || d.getElementsByTagName("head")[0], fsr = 'fsReady',
+aex = {
+  "src": "//gateway.foresee.com/sites/imf-org/production/gateway.min.js",
+  "type": "text/javascript",
+  "async": "true",
+  "data-vendor": "fs",
+  "data-role": "gateway"
+};
+for (var attr in aex){am.setAttribute(attr, aex[attr]);}h.appendChild(am);g[fsr] = function () {var aT = '__' + fsr + '_stk__';g[aT] = g[aT] || [];g[aT].push(arguments);};
+})(window);
+// DO NOT MODIFY ABOVE THIS LINE *****************************************
+</script>
+<!--// ForeSee Production Embed Script v2.00 End-->
+<script language="JavaScript" type="text/javascript" src="../x10/ssi/googlepdf.js"></script>
+
+<!-- /NOINDEX -->
+
+ <!-- Omniture Tracking DTM Script begin--> 
+
+ <script src="../../../assets.adobedtm.com/c7b988f076dc93cc20c734bc51e87dde0b81f134/satelliteLib-834e3fe4ac4ea890c36d061e19fc6cfc1b5dc5d0.js"></script> 
+ <!-- Omniture Tracking DTM Script end --><script src="deploy/datamapper.js"></script></body>
+<!-- Mirrored from www.imf.org/external/datamapper/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jun 2020 16:22:40 GMT -->
+</html>
